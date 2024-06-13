@@ -41,3 +41,21 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* CORES */
+
+:root {
+	--vermelho-bg: #c20008;
+	--amarelo-fonte: #fed300;
+}
+
+/* FONTES */
+
+.londrina-font {
+	font-family: "Londrina Solid", sans-serif;
+}

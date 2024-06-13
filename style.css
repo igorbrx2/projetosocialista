@@ -2,5 +2,37 @@
 @import url(./global.css);
 @import url(./responsivo.css);
 
+/* HEADER */
+
+#cabecalho {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    background-color: var(--vermelho-bg);
+}
+
+.logo img{
+    width: 50px;
+}
+
+#menu-header {
+    display: flex;
+    gap: 20px;
+}
+
+#menu-header li a {
+    color: var(--amarelo-fonte);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    transition: ease-in-out .3s;
+}
+
+#menu-header li a:hover {
+    color: white;
+}
+
+/* IMAGEM DE INTRODUÇÃO */
+
 
 
