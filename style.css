@@ -34,5 +34,31 @@
 
 /* IMAGEM DE INTRODUÇÃO */
 
+#intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: url(./assets/projeto-socialista.png);
+    background-position: center 75%;
+}
+
+#intro button {
+    display: flex;
+    padding: 2px 15px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--verde-whatsapp);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 2rem;
+    margin-top: 170px;
+    transition: ease-in-out .5s;
+}
+#intro button:hover {
+    transform: scale(1.1);
+}
 
 
