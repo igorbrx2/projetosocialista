@@ -93,6 +93,57 @@
     overflow-y: scroll;
 }
 
+    /* assinatura do manifesto */
+    #assina-manifesto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--azul-manifesto);
+        height: 150px;
+        gap: 15px;
+        margin-top: 50px;
+    }
+
+    #assina-manifesto h2 {
+        color: var(--amarelo-fonte);
+        font-size: 2rem;
+        text-align: end;
+        letter-spacing: 2px;
+    }
+
+    .container-form {
+        width: 600px;
+    }
+
+    .assinar-form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .assinar-form input {
+        height: 35px;
+        border-radius: 10px;
+        border: none;
+        width: 255px;
+        padding-left: 10px;
+    }
+
+    .assinar-form input::placeholder {
+        padding-left: 10px;
+    }
+
+    .assinar-form button {
+        color: var(--vermelho-bg);
+        font-weight: bold;
+        font-size: 1.3rem;
+        background-color: var(--amarelo-fonte);
+        border: none;
+        border-radius: 12px;
+        padding: 10px 90px;
+        cursor: pointer;
+    }
+
 /* CANDIDATURAS */
 #pre-candidatos {
     display: flex;
