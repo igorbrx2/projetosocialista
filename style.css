@@ -2,6 +2,7 @@
 @import url(./global.css);
 @import url(./responsivo.css);
 
+
 /* HEADER */
 
 #cabecalho {
@@ -91,8 +92,24 @@
     max-width: 900px;
     max-height: 450px;
     overflow-y: scroll;
+    margin-bottom: 10px;
 }
 
+.btn-quemassinou {
+    display: flex;
+    margin: 10px auto;
+    padding: 5px 60px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    cursor: pointer;
+    border-bottom: 2px solid rgb(102, 102, 102);
+    font-weight: 500;
+    font-size: 1rem;
+    color: rgb(102, 102, 102);
+    text-align: center;
+    background-color: white;
+} 
     /* assinatura do manifesto */
     #assina-manifesto {
         display: flex;
