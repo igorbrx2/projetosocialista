@@ -1,3 +1,19 @@
+
+
+document.querySelector('.btn-quemassinou').addEventListener('click', function() {
+    fetch('/nomes')
+    .then(response => response.json())
+    .then(nomes => {
+        const listaNomes = document.getElementById('listaNomes');
+        listaNomes.innerHTML = nomes.map(nome => `<p>${nome}</p>`).join('');
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+});
+
+// MENU RESPONSIVO
+
 class MobileNavbar {
     constructor(mobileMenu, navList, navLinks) {
         this.mobileMenu = document.querySelector(mobileMenu);

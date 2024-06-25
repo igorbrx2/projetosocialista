@@ -124,6 +124,7 @@
 }
 
 #corpo-manifesto p {
+    width: 95vw;
     max-width: 900px;
     max-height: 450px;
     overflow-y: scroll;
@@ -146,14 +147,22 @@
     background-color: white;
 } 
     /* assinatura do manifesto */
-    #assina-manifesto {
+    .bg-assina-manifesto {
+        background-color: var(--azul-manifesto);
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: var(--azul-manifesto);
-        height: 150px;
-        gap: 15px;
-        margin-top: 50px;
+        padding: 50px 0 ;
+        margin-top: 60px;
+    }
+
+    #assina-manifesto {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 70vw;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
     }
 
     #assina-manifesto h2 {
@@ -161,42 +170,44 @@
         font-size: 2rem;
         text-align: end;
         letter-spacing: 2px;
+        margin: 0 auto;
     }
 
     .container-form {
         width: 600px;
     }
 
-    .assinar-form {
+    #assinar-form {
         display: flex;
         flex-wrap: wrap;
         gap: 15px;
+        margin: 0 auto;
     }
 
-    .assinar-form input {
+    #assinar-form input {
         height: 35px;
         border-radius: 10px;
         border: none;
-        width: 255px;
+        width: calc(50% - 20px);
         padding-left: 10px;
     }
 
-    .assinar-form input::placeholder {
+    #assinar-form input::placeholder {
         padding-left: 10px;
     }
 
-    .assinar-form button {
+    #assinar-form button {
         display: flex;
         align-items: center;
+        justify-content: center;
         color: var(--vermelho-bg);
         font-weight: bold;
         font-size: 1.3rem;
         background-color: var(--amarelo-fonte);
         border: none;
         border-radius: 12px;
-        padding: 10px 90px;
+        width: calc(50% - 10px);
         height: 37px;
-        width: 267px;
         cursor: pointer;
     }
 
@@ -213,11 +224,15 @@
     font-size: 7rem;
     color: var(--vermelho-fonte);
     padding-bottom: 30px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .pre-candidatos-carrossel {
     display: flex;
+    flex-wrap: nowrap;
     gap: 20px;
+    overflow-x: auto;
 }
 
 .linha-vermelha-divisao {
@@ -249,11 +264,16 @@
     line-height: 1.2;
 }
     /* faça parte */
+
+    .bg-faca-parte {
+        background-color: var(--vermelho-bg);
+    }
+
 #faca-parte {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: var(--vermelho-bg);
     width: 100%;
     margin-top: 50px;
     padding: 30px 0;
