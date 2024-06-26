@@ -1,5 +1,14 @@
 @media (max-width: 360px) {
 
+    .titulo-intro h1 {
+        font-size: 4.5rem;
+    }
+
+    .titulo-intro h2 {
+        font-size: 3.5rem;
+        margin-top: -15px;
+    }
+
     #intro {
         display: flex;
         justify-content: center;

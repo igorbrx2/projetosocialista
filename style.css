@@ -72,6 +72,27 @@
 
 /* IMAGEM DE INTRODUÇÃO */
 
+.titulo-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 130px;
+}
+
+.titulo-intro h1 {
+    line-height: .8;
+    font-size: 8rem;
+    text-align: center;
+    color: var(--vermelho-fonte);
+}
+
+.titulo-intro h2 {
+    font-size: 6.5rem;
+    color: var(--laranja-fonte);
+    margin-top: -25px;
+}
+
 #intro {
     display: flex;
     justify-content: center;
@@ -93,7 +114,7 @@
     border: none;
     border-radius: 10px;
     font-size: 2rem;
-    margin-top: 250px;
+    margin-top: 50px;
     transition: ease-in-out .5s;
 }
 #intro button:hover {

@@ -87,6 +87,7 @@ a {
 	--amarelo-fonte: #fed300;
 	--verde-whatsapp: #33a515;
 	--azul-manifesto: #18407b;
+	--laranja-fonte: #fe6100;
 }
 
 /* CONTAINERS */
@@ -111,6 +112,15 @@ a {
 @font-face {
 	font-family: 'cactus';
 	src: url(./SITE-Campanha/Fontes/Cactus\ Regular.otf)
+}
+
+@font-face {
+	font-family: 'twilight';
+	src: url(./SITE-Campanha/Fontes/Twilight.otf);
+}
+
+.twilight-font {
+	font-family: "twilight", sans-serif;
 }
 
 .cactus-font {
