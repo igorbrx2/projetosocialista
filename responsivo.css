@@ -30,17 +30,38 @@
         font-size: 4rem;
     }
 
-    #pre-candidatos h1 {
-        margin-top: -50px;
-        font-size: 4rem;
-    }
-
     .clique-aqui button {
         max-width: 90vw;
     }
 
     .vamos-trilhar p {
         max-width: 90vw;
+    }
+
+}
+
+@media (max-width: 575px) {
+    .titulo-intro h1 {
+        font-size: 5.5rem;
+    }
+
+    .titulo-intro h2 {
+        font-size: 4.5rem;
+        margin-top: -20px;
+    }
+
+    #corpo-manifesto h1 {
+        margin-top: -50px;
+        font-size: 5rem;
+    }
+
+    #corpo-manifesto h2 {
+        font-size: 1.7rem;
+    }
+
+    #pre-candidatos h1 {
+        margin-top: -50px;
+        font-size: 4.5rem;
     }
 
 }
