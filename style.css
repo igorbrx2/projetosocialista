@@ -233,58 +233,61 @@
     }
 
 /* CANDIDATURAS */
-#pre-candidatos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 100px;
-}
 
-#pre-candidatos h1 {
-    font-size: 7rem;
-    color: var(--vermelho-fonte);
-    padding-bottom: 30px;
-    margin: 0 auto;
-    text-align: center;
-}
+    #pre-candidaturas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 60px auto;
+    }
 
-.pre-candidatos-carrossel {
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
-    gap: 20px;
-    overflow-x: auto;
-}
+    #pre-candidaturas h2 {
+        color: var(--vermelho-fonte);
+        font-size: 6.4rem;
+        margin-bottom: 30px;
+    }
 
-.linha-vermelha-divisao {
-    display: block;
-    width: 200px;
-    border: 2px solid var(--vermelho-fonte);
-}
+    .carrossel {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 15px;
+        margin: 0 auto;
+        width: 1090px;
+        max-width: 90vw;
+        padding-bottom: 15px;
+    }
 
-.corpo-card {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding-left: 10px;
-    padding-top: 10px;
-}
+    .card-candidato {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-.pre-candidatos-carrossel {
-    display: flex;
-    flex-wrap: wrap;
-}
+    .card-candidato h3 {
+        font-weight: bold;
+        font-size: 1.3rem;
+        line-height: 1.1;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
 
-.pre-candidatos-carrossel img {
-    width: 300px;
-}
+    .card-candidato p {
+        max-width: 30ch;
+        margin-top: 10px;
+        margin-left: 20px;
+        line-height: 1.2;
+    }
 
-.pre-candidatos-carrossel h2 {
-    font-weight: bold;
-    font-size: 1.2rem;
-    line-height: 1.2;
-}
+    .linha-vermelha {
+        display: block;
+        width: 200px;
+        border: 2px solid var(--vermelho-fonte);
+        margin: 15px 15px 0px 20px;
+    }
+
     /* faça parte */
 
     .bg-faca-parte {

@@ -1,3 +1,4 @@
+
 @media (max-width: 360px) {
 
     .titulo-intro h1 {
@@ -51,9 +52,9 @@
         font-size: 1.6rem;
     }
 
-    #pre-candidatos h1 {
-        margin-top: -50px;
+    #pre-candidaturas h2 {
         font-size: 4.5rem;
+        max-width: 90vw;
     }
 
     .clique-aqui button {
