@@ -1,5 +1,5 @@
 
-@media (max-width: 360px) {
+@media (max-width: 390px) {
 
     .titulo-intro h1 {
         font-size: 4.5rem;
@@ -24,6 +24,14 @@
     #corpo-manifesto h1 {
         margin-top: -50px;
         font-size: 4rem;
+    }
+
+    #pre-candidaturas h3 {
+        font-size: 3.5rem;
+    }
+
+    .card-candidato img {
+        width: 350px;
     }
 
 }

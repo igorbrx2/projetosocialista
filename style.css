@@ -1,340 +1,381 @@
-
-
 /* HEADER */
 
 #cabecalho {
-    display: flex;
-    width: 100%;
-    position: fixed;
-    justify-content: space-around;
-    align-items: center;
-    height: 50px;
-    background-color: var(--vermelho-bg);
+  display: flex;
+  width: 100%;
+  position: fixed;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  background-color: var(--vermelho-bg);
 }
 
-.logo img{
-    width: 50px;
+.logo img {
+  width: 50px;
 }
 
 #nav-list {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 #nav-list li a {
-    color: var(--amarelo-fonte);
-    text-transform: uppercase;
-    font-size: 1.1rem;
-    transition: ease-in-out .3s;
+  color: var(--amarelo-fonte);
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  transition: ease-in-out 0.3s;
 }
 
 #nav-list li a:hover {
-    color: white;
+  color: white;
 }
 
 #nav-list.active {
-    transform: translateX(0);
+  transform: translateX(0);
 }
 
 .mobile-menu.active .line1 {
-    transform: rotate(-45deg) translate(-8px, 8px);
+  transform: rotate(-45deg) translate(-8px, 8px);
 }
 .mobile-menu.active .line2 {
-    opacity: 0;
+  opacity: 0;
 }
 .mobile-menu.active .line3 {
-    transform: rotate(45deg) translate(-5px, -7px);
+  transform: rotate(45deg) translate(-5px, -7px);
 }
 
 @keyframes navLinkFade {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .mobile-menu {
-    display: none;
-    cursor: pointer;
+  display: none;
+  cursor: pointer;
 }
 
 .mobile-menu div {
-    width: 32px;
-    height: 2px;
-    background: white;
-    margin: 8px;
-    transition: .3s;
+  width: 32px;
+  height: 2px;
+  background: white;
+  margin: 8px;
+  transition: 0.3s;
 }
 
 /* IMAGEM DE INTRODUÇÃO */
 
 .titulo-intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 130px;
 }
 
 .titulo-intro h1 {
-    line-height: .8;
-    font-size: 8rem;
-    text-align: center;
-    color: var(--vermelho-fonte);
+  line-height: 0.8;
+  font-size: 8rem;
+  text-align: center;
+  color: var(--vermelho-fonte);
 }
 
 .titulo-intro h2 {
-    font-size: 6.5rem;
-    color: var(--laranja-fonte);
-    margin-top: -25px;
+  font-size: 6.5rem;
+  color: var(--laranja-fonte);
+  margin-top: -25px;
 }
 
 #intro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: calc(100vh + 100px);
-    background: url(./assets/projeto-socialista.png) center 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh + 100px);
+  background: url(./assets/projeto-socialista.png) center 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #intro button {
-    display: flex;
-    padding: 2px 15px;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--verde-whatsapp);
-    color: white;
-    border: none;
-    border-radius: 10px;
-    font-size: 2rem;
-    margin-top: 50px;
-    transition: ease-in-out .5s;
+  display: flex;
+  padding: 2px 15px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--verde-whatsapp);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 2rem;
+  margin-top: 50px;
+  transition: ease-in-out 0.5s;
 }
 #intro button:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 /* MANIFESTO */
 #corpo-manifesto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
 }
 
 #corpo-manifesto h1 {
-    font-size: 7rem;
-    color: var(--vermelho-fonte);
+  font-size: 7rem;
+  color: var(--vermelho-fonte);
 }
 
 #corpo-manifesto h2 {
-    font-size: 2.4rem;
-    font-weight: 900;
-    line-height: 1.1;
-    text-align: center;
-    color: black;
-    padding-bottom: 30px;
+  font-size: 2.4rem;
+  font-weight: 900;
+  line-height: 1.1;
+  text-align: center;
+  color: black;
+  padding-bottom: 30px;
 }
 
 #corpo-manifesto p {
-    width: 95vw;
-    max-width: 900px;
-    max-height: 450px;
-    overflow-y: scroll;
-    margin-bottom: 10px;
+  width: 95vw;
+  max-width: 900px;
+  max-height: 450px;
+  overflow-y: scroll;
+  margin-bottom: 10px;
 }
 
 .btn-quemassinou {
-    display: flex;
-    margin: 10px auto;
-    padding: 5px 60px;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    cursor: pointer;
-    border-bottom: 2px solid rgb(102, 102, 102);
-    font-weight: 500;
-    font-size: 1rem;
-    color: rgb(102, 102, 102);
-    text-align: center;
-    background-color: white;
-} 
-    /* assinatura do manifesto */
-    .bg-assina-manifesto {
-        background-color: var(--azul-manifesto);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 50px 0 ;
-        margin-top: 60px;
-    }
+  display: flex;
+  margin: 10px auto;
+  padding: 5px 60px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  cursor: pointer;
+  border-bottom: 2px solid rgb(102, 102, 102);
+  font-weight: 500;
+  font-size: 1rem;
+  color: rgb(102, 102, 102);
+  text-align: center;
+  background-color: white;
+}
+/* assinatura do manifesto */
+.bg-assina-manifesto {
+  background-color: var(--azul-manifesto);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  margin-top: 60px;
+}
 
-    #assina-manifesto {
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 70vw;
-        align-items: center;
-        justify-content: center;
-        gap: 30px;
-    }
+#assina-manifesto {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 70vw;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
 
-    #assina-manifesto h2 {
-        color: var(--amarelo-fonte);
-        font-size: 2rem;
-        text-align: end;
-        letter-spacing: 2px;
-        margin: 0 auto;
-    }
+#assina-manifesto h2 {
+  color: var(--amarelo-fonte);
+  font-size: 2rem;
+  text-align: end;
+  letter-spacing: 2px;
+  margin: 0 auto;
+}
 
-    .container-form {
-        width: 600px;
-    }
+.container-form {
+  width: 600px;
+}
 
-    #assinar-form {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 15px;
-        margin: 0 auto;
-    }
+#assinar-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 0 auto;
+}
 
-    #assinar-form input {
-        height: 35px;
-        border-radius: 10px;
-        border: none;
-        width: calc(50% - 20px);
-        padding-left: 10px;
-    }
+#assinar-form input {
+  height: 35px;
+  border-radius: 10px;
+  border: none;
+  width: calc(50% - 20px);
+  padding-left: 10px;
+}
 
-    #assinar-form input::placeholder {
-        padding-left: 10px;
-    }
+#assinar-form input::placeholder {
+  padding-left: 10px;
+}
 
-    #assinar-form button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--vermelho-bg);
-        font-weight: bold;
-        font-size: 1.3rem;
-        background-color: var(--amarelo-fonte);
-        border: none;
-        border-radius: 12px;
-        width: calc(50% - 10px);
-        height: 37px;
-        cursor: pointer;
-    }
+#assinar-form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--vermelho-bg);
+  font-weight: bold;
+  font-size: 1.3rem;
+  background-color: var(--amarelo-fonte);
+  border: none;
+  border-radius: 12px;
+  width: calc(50% - 10px);
+  height: 37px;
+  cursor: pointer;
+}
 
 /* CANDIDATURAS */
 
-    #pre-candidaturas {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 60px auto;
-    }
+#pre-candidaturas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 60px auto;
+}
 
-    #pre-candidaturas h2 {
-        color: var(--vermelho-fonte);
-        font-size: 6.4rem;
-        margin-bottom: 30px;
-    }
+#pre-candidaturas h2 {
+  color: var(--vermelho-fonte);
+  font-size: 6.4rem;
+  margin-bottom: 15px;
+  max-width: 90vw;
+  text-align: center;
+}
 
-    .carrossel {
-        display: flex;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        gap: 15px;
-        margin: 0 auto;
-        width: 1090px;
-        max-width: 90vw;
-        padding-bottom: 15px;
-    }
+#pre-candidaturas h3 {
+    color: var(--azul-manifesto);
+    font-size: 4.5rem;
+    text-align: center;
+    max-width: 90vw;
+}
 
-    .card-candidato {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+.candidatos-pref {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 0 auto;
+  max-width: 90vw;
+  padding-bottom: 50px;
+  justify-content: center;
+}
 
-    .card-candidato h3 {
-        font-weight: bold;
-        font-size: 1.3rem;
-        line-height: 1.1;
-        margin-top: 10px;
-        margin-left: 20px;
-    }
+.card-candidato {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  max-width: 90vw;
+}
 
-    .card-candidato p {
-        max-width: 30ch;
-        margin-top: 10px;
-        margin-left: 20px;
-        line-height: 1.2;
-    }
+.card-candidato img {
+    width: 500px;
+    max-width: 90vw;
+}
 
-    .linha-vermelha {
-        display: block;
-        width: 200px;
-        border: 2px solid var(--vermelho-fonte);
-        margin: 15px 15px 0px 20px;
-    }
+.card-candidato span {
+    display: inline-block;
+  font-weight: bold;
+  font-size: 1.3rem;
+  line-height: 1.1;
+  margin-top: 10px;
+  margin-left: 20px;
+}
 
-    /* faça parte */
+.card-candidato p {
+  max-width: 30ch;
+  margin-top: 10px;
+  margin-left: 20px;
+  line-height: 1.2;
+}
 
-    .bg-faca-parte {
-        background-color: var(--vermelho-bg);
-    }
+.linha-vermelha {
+  display: block;
+  width: 200px;
+  border: 2px solid var(--vermelho-fonte);
+  margin: 15px 15px 0px 20px;
+}
+
+.mandato-coletivo {
+    display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  gap: 20px;
+  max-width: 90vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.mandato-coletivo .card-candidato {
+    width: 250px;
+    max-width: 90vw;
+}
+
+.mandato-coletivo .linha-vermelha {
+    width: 180px;
+    margin-left: 10px;
+}
+
+.mandato-coletivo img {
+    width: 240px;
+    max-width: 90vw;
+}
+
+.mandato-coletivo span {
+    font-size: 1.1rem;
+    margin-left: 10px;
+}
+
+.mandato-coletivo p {
+    margin-left: 10px;
+}
+
+/* faça parte */
+
+.bg-faca-parte {
+  background-color: var(--vermelho-bg);
+}
 
 #faca-parte {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 50px;
-    padding: 30px 0;
-    gap: 50px;;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 50px;
+  padding: 30px 0;
+  gap: 50px;
 }
 
 .clique-aqui {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
 .clique-aqui h2 {
-    font-size: 2rem;
-    color: var(--amarelo-fonte);
+  font-size: 2rem;
+  color: var(--amarelo-fonte);
 }
 
 .clique-aqui button {
-    color: white;
-    background-color: var(--verde-whatsapp);
-    font-size: 1.8rem;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 100px;
-    max-width: 25ch;
+  color: white;
+  background-color: var(--verde-whatsapp);
+  font-size: 1.8rem;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 100px;
+  max-width: 25ch;
 }
-
 
 .vamos-trilhar p {
-    color: white;
-    font-size: 1.6rem;
+  color: white;
+  font-size: 1.6rem;
 }
-
-
-
-
-
-
