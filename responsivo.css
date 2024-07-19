@@ -75,7 +75,7 @@
 
 }
 
-@media (max-width: 765px) {
+@media (max-width: 770px) {
 
     .mobile-menu {
         display: block;
@@ -108,6 +108,14 @@
         max-width: 90vw;
         margin: 0 auto;
     }
+
+    .card-luciana {
+        margin-right: 0px;
+      }
+
+      .mandato-coletivo {
+        gap: 20px;
+      }
 
 
 }
