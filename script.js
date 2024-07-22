@@ -6,7 +6,8 @@ const date = new Date();
 // Definindo os compromissos diretamente no código
 const compromissos = {
     "2024-07-19": ["Teste da agenda - 16:20", "Fazer café - 16:20"],
-    "2024-07-21": ["Tomar cerveja - 18:03", "ABC x Botafogo-PB - 19:00"],
+    "2024-07-22": ["Tomar cerveja - 18:03", "ABC x Botafogo-PB - 19:00"],
+    "2024-07-27": ["teste"],
     // Adicione mais compromissos conforme necessário
 };
 
