@@ -88,10 +88,12 @@ a {
 :root {
 	--vermelho-bg: #c20008;
 	--vermelho-fonte: #ea000c;
+	--vermelho-claro: #cb4e45;
 	--amarelo-fonte: #fed300;
 	--verde-whatsapp: #33a515;
 	--azul-manifesto: #18407b;
 	--laranja-fonte: #fe6100;
+	--cinza-bg: #666666;
 }
 
 /* CONTAINERS */
