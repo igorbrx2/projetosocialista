@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -7,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projeto Socialista</title>
-  <link rel="stylesheet" href="./global.css" />
-  <link rel="stylesheet" href="./style.css" />
-  <link rel="stylesheet" href="./responsivo.css" />
+  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/global.css" />
+  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" />
+  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/responsivo.css" />
 
   <!-- londrina font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,13 +24,13 @@
 
   <!-- MENU -->
   <header id="cabecalho">
-    <div class="logo"><a href="./"><img src="./assets/logo-pstu.png" alt=""></a></div>
+    <div class="logo"><a href="./"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logo-pstu.png" alt=""></a></div>
     <nav>
       <ul id="nav-list" class="londrina-font">
         <li><a href="#manifesto">manifesto</a></li>
-        <li><a href="#pre-candidatos">pré-candidatos</a></li>
-        <li><a href="./">propostas</a></li>
-        <li><a href="./">agenda</a></li>
+        <li><a href="#pre-candidaturas">pré-candidatos</a></li>
+        <!-- <li><a href="./">propostas</a></li> -->
+        <li><a href="#agenda">agenda</a></li>
       </ul>
 
     </nav>
@@ -102,17 +100,19 @@
     </article>
 
     <button class="btn-quemassinou montserrat-font">veja quem assinou</button>
-    <div id="listaNomes"></div>
+    <div id="subscriber-container">
+    <ul id="subscriber-list"></ul>
+    </div>
 
     <div class="bg-assina-manifesto">
       <section id="assina-manifesto">
         <h2 class="londrina-font">ASSINA O<br>MANIFESTO</h2>
         <div class="container-form">
-          <form action="./" id="assinar-form">
-            <input type="text" id="nomeCompleto" placeholder="Nome completo">
-            <input type="text" id="profissao" placeholder="Profissão">
-            <input type="tel" id="whatsapp" placeholder="Whatsapp">
-            <button type="submit" class="montserrat-font"><a href="#">Assinar</a></button>
+          <form action="<?php echo get_stylesheet_directory_uri(); ?>/process.php" method="post" onsubmit="return validadeForm()" id="assinar-form">
+            <input type="text" name="fullname" id="nomeCompleto" placeholder="Nome completo">
+            <input type="text" name="occupation" id="profissao" placeholder="Profissão">
+            <input type="tel" name="phone" id="whatsapp" placeholder="Whatsapp">
+            <button type="submit" class="montserrat-font">Assinar</button>
           </form>
 
         </div>
@@ -133,7 +133,7 @@
 
       <li class="card-candidato">
         <a href="./">
-          <img src="./assets/nando-poeta-card.png" alt="">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/nando-poeta-card.png" alt="">
           <span class="montserrat-font">Pré-candidato a Prefeito de Natal</span>
           <div class="linha-vermelha"></div>
           <p class="montserrat-font">sociólogo, professor da rede pública e cordelista. Ele tem 61 anos e está há mais de 30 anos no partido.</p>
@@ -142,7 +142,7 @@
 
       <li class="card-candidato">
         <a href="./">
-          <img src="./assets/tiago-silva-card.png" alt="">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/tiago-silva-card.png" alt="">
           <span class="montserrat-font">Pré-candidato a Vice-prefeito de Natal</span>
           <div class="linha-vermelha"></div>
           <p class="montserrat-font">jornalista, estudante de teatro na UFRN, poeta e performer. Ele está no partido desde 2016.</p>
@@ -156,7 +156,7 @@
     <ul class="mandato-coletivo container-1200">
       <li class="card-candidato card-luciana">
         <a href="./">
-          <img src="./assets/luciana-lima-card.png" alt="">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/luciana-lima-card.png" alt="">
           <span class="montserrat-font">Pré-candidata a vereadora de Natal</span>
           <div class="linha-vermelha-luciana"></div>
           <p class="montserrat-font">pedagoga de formação, professora da rede municipal e mãe. Iniciou sua militância no surgimento do PSTU.</p>
@@ -165,7 +165,7 @@
 
       <li class="card-candidato">
         <a href="./">
-          <img src="./assets/alexandre-guedes-card.png" alt="">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/alexandre-guedes-card.png" alt="">
           <span class="montserrat-font">Pré-candidato a mandato coletivo</span>
           <div class="linha-laranja"></div>
           <p class="montserrat-font">funcionário público do Detran/RN, coordenador licenciado do Sinai. Alexandre está no partido desde 1999.</p>
@@ -173,7 +173,7 @@
       </li>
       <li class="card-candidato">
         <a href="./">
-          <img src="./assets/erica-guarani-card.png" alt="">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/erica-guarani-card.png" alt="">
           <span class="montserrat-font">Pré-candidata a mandato coletivo</span>
           <div class="linha-laranja"></div>
           <p class="montserrat-font">mulher indígena potiguar, formada em ciências biológicas e técnica de enfermagem concursada.</p>
@@ -181,7 +181,7 @@
       </li>
       <li class="card-candidato">
         <a href="./">
-          <img src="./assets/jose-jairan-card.png" alt="">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/jose-jairan-card.png" alt="">
           <span class="montserrat-font">Pré-candidato a mandato coletivo</span>
           <div class="linha-laranja"></div>
           <p class="montserrat-font">professor de matemática, constrói o Movimento Quilombo Raça e Classe e o Movimento Muda Sinte.</p>
@@ -210,7 +210,7 @@
 
   <!-- AGENDA -->
 
-  <div class="container">
+  <div class="container" id="agenda">
     <div class="calendar">
       <div class="eventos"><span class="montserrat-font">EVENTOS</span></div>
         <div class="month">
@@ -238,9 +238,63 @@
     </div>
 </div>
 
+<!-- FOOTER -->
 
+<footer id="rodape">
+  <span>Desenvolvido pela Poti Comunicação.</span>
+</footer>
+
+<script>
+        function validateForm() {
+    var fullname = document.getElementById('fullname').value;
+    var phone = document.getElementById('phone').value; // Substituído "email" por "phone"
+    var occupation = document.getElementById('occupation').value; // Adicionado campo "profissão"
+    var phonePattern = /^\d{10}$/; // Padrão para número de telefone (você pode ajustar conforme necessário)
+
+    if (fullname.trim() === "") {
+        alert("Nome completo não pode ser vazio.");
+        return false;
+    }
+
+    if (phone.trim() === "") { // Atualizado para verificar "phone"
+        alert("Número de telefone não pode ser vazio."); // Atualizado para refletir a mudança
+        return false;
+    }
+
+    if (!phonePattern.test(phone)) {
+        alert("Por favor, insira um número de telefone válido (10 dígitos).");
+        return false;
+    }
+
+    // Você pode adicionar mais validações conforme necessário para o campo "profissão"
+
+    return true;
+}
+        /***
+         * 
+         *  Esse script é responsavel por fazer o fetch do JSON
+         *  e popular o local com os nomes 
+         * 
+         */
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('<?php echo get_stylesheet_directory_uri(); ?>/subscribes.json')
+                .then(response => response.json())
+                .then(data => {
+                    const list = document.getElementById('subscriber-list');
+                    data.forEach(subscriber => {
+                        const listItem = document.createElement('li');
+                        listItem.textContent = subscriber.fullname;
+                        list.appendChild(listItem);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error fetching the subscriber list:', error);
+                });
+        });
+
+    </script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="./script.js"></script>
+  <script src="<?php echo get_stylesheet_directory_uri(); ?>/script.js"></script>
 </body>
 
 </html>

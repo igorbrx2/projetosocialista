@@ -1,12 +1,27 @@
+// QUEM ASSINOU OCULTAR EXIBIR
+
+document.addEventListener('DOMContentLoaded', function () {
+    const subscriberList = document.getElementById('subscriber-list');
+    const btnQuemAssinou = document.querySelector('.btn-quemassinou');
+
+    btnQuemAssinou.addEventListener('click', function () {
+        if (subscriberList.style.display === 'none') {
+            // Se estiver oculta, mostra a div
+            subscriberList.style.display = 'block';
+        } else {
+            // Se estiver visível, oculta a div
+            subscriberList.style.display = 'none';
+        }
+    });
+});
+
 // AGENDA
 
 const date = new Date();
 
 // Definindo os compromissos diretamente no código
 const compromissos = {
-    "2024-07-19": ["Teste da agenda - 16:20", "Fazer café - 16:20"],
-    "2024-07-22": ["Tomar cerveja - 18:03", "ABC x Botafogo-PB - 19:00"],
-    "2024-07-27": ["teste"],
+    "2024-07-26": ["Convenção do PSTU (auditório do Sinpol) - 16:20"],
     // Adicione mais compromissos conforme necessário
 };
 

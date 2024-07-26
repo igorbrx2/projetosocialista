@@ -1,3 +1,12 @@
+/*
+Theme Name: Projeto Socialista
+Theme URI: http://projetosocialista.com.br
+Author: Igor Gomes
+Author URI: http://origamid.com/
+Description: Tema criado para a campanha do PSTU Natal 2024
+Version: 1.0
+*/
+
 /* HEADER */
 
 #cabecalho {
@@ -169,6 +178,23 @@
   text-align: center;
   background-color: white;
 }
+
+#subscriber-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#subscriber-list {
+  list-style: none;
+  padding: 0;
+  line-height: 1.2;
+  color: var(--cinza-fonte);
+  font-size: 1.1rem;
+}
+
 /* assinatura do manifesto */
 .bg-assina-manifesto {
   background-color: var(--azul-manifesto);
@@ -176,7 +202,7 @@
   justify-content: center;
   align-items: center;
   padding: 50px 0;
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 #assina-manifesto {
@@ -516,3 +542,15 @@
   border-bottom: 1px solid #ddd;
 }
 
+/* FOOTER */
+
+#rodape {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--vermelho-bg);
+}
+
+#rodape span {
+  color: white;
+}
