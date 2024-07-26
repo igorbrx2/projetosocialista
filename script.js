@@ -165,3 +165,17 @@ const mobileNavbar = new MobileNavbar(
     "#nav-list li"
 );
 mobileNavbar.init();
+
+// ROLAGEM
+
+document.querySelector('a[href="#pre-candidaturas"]').addEventListener('click', function(event) {
+    event.preventDefault();
+    const targetSection = document.querySelector('#pre-candidaturas');
+    const offset = 100; // ajuste conforme necessário
+    const topPosition = targetSection.offsetTop - offset;
+
+    window.scrollTo({
+        top: topPosition,
+        behavior: 'smooth'
+    });
+});
