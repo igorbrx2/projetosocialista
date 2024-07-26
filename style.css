@@ -180,7 +180,7 @@ Version: 1.0
 }
 
 #subscriber-container {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -537,6 +537,10 @@ Version: 1.0
 }
 
 .events div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
   padding: 10px;
   margin-bottom: 10px;
   border-bottom: 1px solid #ddd;

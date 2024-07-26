@@ -47,7 +47,7 @@
     <div class="titulo-intro">
       <h1 class="cactus-font">PROJETO<br>SOCIALISTA</h1>
       <h2 class="twilight-font">Para Natal</h2>
-      <button class="londrina-font"><a href="./">Fala com a gente no whatsapp</a></button>
+      <button class="londrina-font"><a href="https://wa.me/5584999738682" target="_blank">Fala com a gente no whatsapp</a></button>
     </div>
   </section>
   <!-- FIM DA INTRO -->
@@ -195,7 +195,7 @@
     <section id="faca-parte">
       <div class="clique-aqui">
         <h2 class="cactus-font">FAÇA PARTE</h2>
-        <button class="cactus-font"><a href="./">Clica aqui para participar</a></button>
+        <button class="cactus-font"><a href="https://wa.me/5584999738682" target="_blank">Clica aqui para participar</a></button>
       </div>
 
       <div class="vamos-trilhar">
@@ -292,9 +292,8 @@
                 });
         });
 
-    </script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="<?php echo get_stylesheet_directory_uri(); ?>/script.js"></script>
+</script>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/script.js"></script>
 </body>
 
 </html>

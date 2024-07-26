@@ -1,31 +1,26 @@
 // QUEM ASSINOU OCULTAR EXIBIR
 
 document.addEventListener('DOMContentLoaded', function () {
-    const subscriberList = document.getElementById('subscriber-list');
+    const subscriberList = document.getElementById('subscriber-container');
     const btnQuemAssinou = document.querySelector('.btn-quemassinou');
 
     btnQuemAssinou.addEventListener('click', function () {
         if (subscriberList.style.display === 'none') {
-            // Se estiver oculta, mostra a div
-            subscriberList.style.display = 'block';
+            subscriberList.style.display = 'flex';
         } else {
-            // Se estiver visível, oculta a div
             subscriberList.style.display = 'none';
         }
     });
 });
 
-// AGENDA
-
 const date = new Date();
 
 // Definindo os compromissos diretamente no código
 const compromissos = {
-    "2024-07-26": ["Convenção do PSTU (auditório do Sinpol) - 16:20"],
+    "2024-07-26": ["Convenção do PSTU (auditório do Sinpol) - 17:30"],
     // Adicione mais compromissos conforme necessário
 };
 
-// Função para encontrar o dia mais próximo com compromissos
 const findNearestDayWithAppointments = (selectedDate) => {
     let nearestDay = null;
     let nearestDayDiff = Infinity;
@@ -35,7 +30,6 @@ const findNearestDayWithAppointments = (selectedDate) => {
         const dayDate = new Date(day);
         const diff = dayDate.getTime() - todayTime;
 
-        // Verifica se a data é futura e se a diferença é menor que a menor encontrada até agora
         if (diff >= 0 && diff < nearestDayDiff && compromissos[day].length > 0) {
             nearestDay = dayDate;
             nearestDayDiff = diff;
@@ -84,55 +78,36 @@ const renderCalendar = () => {
     }
     monthDays.innerHTML = days;
 
-    // Atualiza a visualização da agenda ao carregar o calendário
-    const today = new Date();
-    const formattedToday = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
-    let events = compromissos[formattedToday] || [];
+    updateEvents(new Date());
+};
+
+const updateEvents = (selectedDate) => {
+    const formattedDate = `${selectedDate.getFullYear()}-${String(selectedDate.getMonth() + 1).padStart(2, '0')}-${String(selectedDate.getDate()).padStart(2, '0')}`;
+    let events = compromissos[formattedDate] || [];
     const eventsDiv = document.querySelector('.events');
 
     if (events.length === 0) {
-        const nearestDay = findNearestDayWithAppointments(today);
+        const nearestDay = findNearestDayWithAppointments(selectedDate);
         if (nearestDay) {
             const nearestDate = `${nearestDay.getFullYear()}-${String(nearestDay.getMonth() + 1).padStart(2, '0')}-${String(nearestDay.getDate()).padStart(2, '0')}`;
             events = compromissos[nearestDate] || [];
-            // Atualiza a visualização da agenda com os eventos do dia mais próximo
-            eventsDiv.innerHTML = `<h3 style="text-align: center;
-            font-size: 1.2rem;
-            margin: 10px auto;>Compromissos para ${nearestDay.getDate()}</h3>` + events.map(event => `<div>${event}</div>`).join('');
+            eventsDiv.innerHTML = `<h3 style="text-align: center; font-size: 1.2rem; margin: 10px auto;">Compromissos para ${nearestDay.getDate()}</h3>` + events.map(event => `<div>${event}</div>`).join('');
+        } else {
+            eventsDiv.innerHTML = "<h3 style='text-align: center; font-size: 1.2rem; margin: 10px auto;'>Sem compromissos</h3>";
         }
     } else {
-        // Atualiza a visualização da agenda com os eventos do dia atual
-        eventsDiv.innerHTML = `<h3 style="text-align: center;
-            font-size: 1.2rem;
-            margin: 10px auto;>Compromissos para ${today.getDate()}</h3>` + events.map(event => `<div>${event}</div>`).join('');
+        eventsDiv.innerHTML = `<h3 style="text-align: center; font-size: 1.2rem; margin: 10px auto;">Compromissos para ${selectedDate.getDate()}</h3>` + events.map(event => `<div>${event}</div>`).join('');
     }
-
-    document.querySelectorAll('.days div').forEach(day => {
-        day.addEventListener('click', (e) => {
-            const selectedDay = e.target.innerHTML;
-            let selectedDate = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(selectedDay).padStart(2, '0')}`;
-            let events = compromissos[selectedDate] || [];
-
-            // Se o dia selecionado não tiver compromissos, encontrar o dia mais próximo com compromissos
-            if (events.length === 0) {
-                const nearestDay = findNearestDayWithAppointments(new Date(selectedDate));
-                if (nearestDay) {
-                    selectedDate = `${nearestDay.getFullYear()}-${String(nearestDay.getMonth() + 1).padStart(2, '0')}-${String(nearestDay.getDate()).padStart(2, '0')}`;
-                    events = compromissos[selectedDate] || [];
-                }
-            }
-
-            eventsDiv.innerHTML = `<h3 style="text-align: center;
-            font-size: 1.2rem;
-            margin: 10px auto;">Compromissos para o dia ${selectedDay}</h3>`;
-            events.forEach(event => {
-                const eventDiv = document.createElement('div');
-                eventDiv.innerHTML = event;
-                eventsDiv.appendChild(eventDiv);
-            });
-        });
-    });
 };
+
+document.querySelectorAll('.days').forEach(day => {
+    day.addEventListener('click', (e) => {
+        if (e.target.classList.contains('prev-date') || e.target.classList.contains('next-date')) return;
+        const selectedDay = parseInt(e.target.innerHTML);
+        const selectedDate = new Date(date.getFullYear(), date.getMonth(), selectedDay);
+        updateEvents(selectedDate);
+    });
+});
 
 document.querySelector('.prev').addEventListener('click', () => {
     date.setMonth(date.getMonth() - 1);
@@ -145,8 +120,6 @@ document.querySelector('.next').addEventListener('click', () => {
 });
 
 renderCalendar();
-
-
 
 // MENU RESPONSIVO
 
