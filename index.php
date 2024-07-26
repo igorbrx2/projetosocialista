@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" />
   <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/responsivo.css" />
 
+  <link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon.ico" type="image/x-icon">
+
+
   <!-- londrina font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
