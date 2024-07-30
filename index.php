@@ -247,6 +247,8 @@
   <span>Desenvolvido pela Poti Comunicação.</span>
 </footer>
 
+
+
 <script>
         function validateForm() {
     var fullname = document.getElementById('fullname').value;
