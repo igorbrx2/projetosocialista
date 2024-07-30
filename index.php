@@ -252,17 +252,17 @@
 <script>
         function validateForm() {
     var fullname = document.getElementById('fullname').value;
-    var phone = document.getElementById('phone').value; // Substituído "email" por "phone"
-    var occupation = document.getElementById('occupation').value; // Adicionado campo "profissão"
-    var phonePattern = /^\d{10}$/; // Padrão para número de telefone (você pode ajustar conforme necessário)
+    var phone = document.getElementById('phone').value;
+    var occupation = document.getElementById('occupation').value;
+    var phonePattern = /^\d{10}$/;
 
     if (fullname.trim() === "") {
         alert("Nome completo não pode ser vazio.");
         return false;
     }
 
-    if (phone.trim() === "") { // Atualizado para verificar "phone"
-        alert("Número de telefone não pode ser vazio."); // Atualizado para refletir a mudança
+    if (phone.trim() === "") {
+        alert("Número de telefone não pode ser vazio.");
         return false;
     }
 
@@ -270,9 +270,6 @@
         alert("Por favor, insira um número de telefone válido (10 dígitos).");
         return false;
     }
-
-    // Você pode adicionar mais validações conforme necessário para o campo "profissão"
-
     return true;
 }
         /***
