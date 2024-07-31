@@ -72,6 +72,10 @@
     .vamos-trilhar p {
         max-width: 90vw;
     }
+
+    .card-candidato img {
+        width: 350px;
+    }
 }
 
 @media (max-width: 770px) {
@@ -101,6 +105,10 @@
 
     #corpo-manifesto p {
         max-width: 90vw;
+    }
+
+    #corpo-manifesto h2 {
+        font-size: 2.2rem;
     }
 
     .container-form {

@@ -300,8 +300,8 @@ Version: 1.0
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 90vw;
   width: 500px;
+  max-width: 90vw;
 }
 
 .card-candidato img {
