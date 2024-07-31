@@ -1,3 +1,4 @@
+console.log("Script carregado corretamente");
 // MODAIS DE APRESENTAÇÃO
 
     // conteúdo dinâmico dos candidatos
