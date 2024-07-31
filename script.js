@@ -8,7 +8,7 @@ const botaoAbrir = document.querySelector('[data-modal="abrir"]'); // é importa
 
 	function toggleModal(event) {
 		event.preventDefault();
-		containerModal.classList.toggle('.ativo');
+		containerModal.classList.toggle('ativo');
 	}
 
 	function cliqueForaModal(event) {

@@ -569,7 +569,7 @@ Version: 1.0
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
   display: none;
-  z-index: 9999;
+  z-index: 999;
   justify-content: center;
   align-items: center;
 }
@@ -580,8 +580,8 @@ Version: 1.0
   height: 70vh;
   width: 800px;
   max-width: 90vw;
-  overflow-x: auto;
-  padding: 30px;
+  overflow-y: scroll;
+  padding: 50px 30px;
   border-radius: 10px;
   justify-content: center;
   align-items: center;
@@ -598,7 +598,7 @@ position: relative;
 }
 
 .modalNando-container.ativo {
-  display: flex
+  display: flex;
   }
 
   @keyframes modalNando {
@@ -613,5 +613,18 @@ position: relative;
   }
 
 .ativo .modalNando {
-animation: modal .3s forwards;
+animation: modalNando .3s forwards;
+}
+
+.botaoFechar {
+  background: var(--vermelho-fonte);
+  color: white;
+  font-weight: bold;
+  border-style: none;
+  position: absolute;
+  z-index: 9999;
+  padding: 5px 10px;
+  border-radius: 10px;
+  top: 10px;
+  right: 10px;
 }
