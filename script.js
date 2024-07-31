@@ -1,28 +1,56 @@
 // MODAIS DE APRESENTAÇÃO
 
-const botaoAbrir = document.querySelector('[data-modal="abrir"]'); // é importante você definir a função "data-modal" no seu botão e a função "data-" nos seguintes que aparecerem
-	const botaoFechar = document.querySelector('[data-modal="fechar"]');
-	const containerModal = document.querySelector('[data-modal="container"]');
-	
-	if(botaoAbrir && botaoFechar && containerModal) {
+    // conteúdo dos candidatos
+    const candidatos = {
+        'nandoPoeta': `
+        <p>Meu nome é Nando Poeta. Sou sociólogo, tenho 61 anos e nasci em Natal.Sou casado, pai de três filhos e avô. Já fui professor da rede privada e da rede pública do Estado de São Paulo, onde lecionava Sociologia. Atualmente, trabalho na Secretaria de Educação do Rio Grande do Norte e no Instituto Latino-Americano de Estudos Socioeconômicos (Ilaese).Sou cordelista com vários títulos publicados, muitos com temática político-social e um dos organizadores do Ponto de Memória Estação do Cordel. <br>
 
-	function toggleModal(event) {
-		event.preventDefault();
-		containerModal.classList.toggle('ativo');
-	}
+    <br>Iniciei minha militância política no movimento secundarista, na antiga Escola Técnica Federal. Ingressei no curso de Metalurgia, depois passei para o curso de Edificações. Foi nesse período que dei meus primeiros passos na luta estudantil, participando e apoiando uma chapa para o centro cívico. Fui trabalhar então na construção civil, onde tive contato com os operários e suas vivências. Em seguida, entrei para a Universidade Federal do Rio Grande do Norte (UFRN), onde conheci o movimento estudantil, no curso de Ciências Sociais. Integrei o Centro Acadêmico do meu curso e participei da ocupação da Reitoria em 1984.<br>
 
-	function cliqueForaModal(event) {
-		if(event.target === this) {
-		toggleModal(event);
-		}
-	
-	}
-	
-	botaoAbrir.addEventListener('click', toggleModal);
-	botaoFechar.addEventListener('click', toggleModal);
-	containerModal.addEventListener('click', cliqueForaModal);
-	
-}
+    <br>Em seguida, fui para o movimento sindical.Associei-me à antiga associação de professores do RN, APRN, em 1984; depois, fui para o Andes, que era a associação de servidores públicos estaduais.Fundamos o Sinsp, depois o Sinte, do qual fui diretor até 1997.  Compus a Executiva da Central Única dos Trabalhadores (CUT) e, posteriormente, participei da construção da CSP-Conlutas e do Movimento Muda Sinte (MMS). Sou militante socialista há mais de 40 anos, 30 destes no PSTU, desde a histórica Convergência Socialista (CS), organização trotskista que deu origem ao meu partido e a diversas outras organizações de esquerda.<br>
+
+    <br><strong>Pontos do Programa:</strong><br>
+
+    <br>-	Combater a privatização dos equipamentos culturais;<br>
+    <br>-	Destinar mais recursos para políticas públicas de cultura;<br>
+    <br>-	Dobrar o orçamento para a cultura;<br>
+    <br>-	Fomentar o acesso da população aos equipamentos culturais públicos;<br>
+    <br>-	Cobrar os grande devedores do município e reverter esse dinheiro para os serviços públicos;<br>
+    <br>-	Universalizar a educação básica;<br>
+    <br>-	SUS 100% público;<br>
+    <br>-	Estatização dos serviços de saúde;<br>
+    <br>-	Fim da privatização e terceirização na saúde;<br>
+    <br>-	Suspensão do pagamento da dívida pública e auditoria das contas do município;<br>
+    <br>-	Criação de empresa municipal de transporte;<br>
+</p>`,
+    };
+    
+    document.addEventListener('DOMContentLoaded', () => {
+        const modalContainer = document.querySelector('.modalNando-container');
+        const modalConteudo = document.getElementById('modalConteudo');
+        const botaoFechar = document.getElementById('fecharModal');
+        
+        document.querySelectorAll('.card-candidato').forEach(candidato => {
+            candidato.addEventListener('click', (event) => {
+              event.preventDefault();
+              const idCandidato = candidato.getAttribute('data-candidato');
+              if (candidatos[idCandidato]) {
+                modalConteudo.innerHTML = candidatos[idCandidato];
+                modalContainer.style.display = 'flex'; // Mostrar o modal
+              }
+            });
+          });
+
+          botaoFechar.addEventListener('click', () => {
+            modalContainer.style.display = 'none'; // Fechar o modal
+          });
+        
+          modalContainer.addEventListener('click', (event) => {
+            if (event.target === modalContainer) {
+              modalContainer.style.display = 'none'; // Fechar o modal ao clicar fora
+            }
+          });
+        });
 
 // QUEM ASSINOU OCULTAR EXIBIR
 
