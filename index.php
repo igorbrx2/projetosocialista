@@ -50,7 +50,7 @@
     <div class="titulo-intro">
       <h1 class="cactus-font">PROJETO<br>SOCIALISTA</h1>
       <h2 class="twilight-font">Para Natal</h2>
-      <button class="londrina-font"><a href="https://wa.me/5584999738682" target="_blank">Fala com a gente no whatsapp</a></button>
+      <button class="londrina-font"><a href="https://wa.me/5584991334508" target="_blank">Fala com a gente no whatsapp</a></button>
     </div>
   </section>
   <!-- FIM DA INTRO -->
@@ -198,7 +198,7 @@
     <section id="faca-parte">
       <div class="clique-aqui">
         <h2 class="cactus-font">FAÇA PARTE</h2>
-        <button class="cactus-font"><a href="https://wa.me/5584999738682" target="_blank">Clica aqui para participar</a></button>
+        <button class="cactus-font"><a href="https://wa.me/5584991334508" target="_blank">Clica aqui para participar</a></button>
       </div>
 
       <div class="vamos-trilhar">
@@ -247,9 +247,38 @@
   <span>Desenvolvido pela Poti Comunicação.</span>
 </footer>
 
-<section class="modalNando-container" id="modal">
-  <div class="modalNando">
-    <button data-modal="fechar" class="botaoFechar" id="fecharModal">fechar</button>
+<section class="modalNando-container" id="modal" style="position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 999;
+  justify-content: center;
+  align-items: center;">
+  <div class="modalNando" style="background: white;
+  text-align: start;
+  height: 70vh;
+  width: 800px;
+  max-width: 90vw;
+  overflow-y: auto;
+  padding: 50px 30px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 22px -3px rgba(0,0,0,0.4);
+  position: relative;">
+    <button data-modal="fechar" class="botaoFechar" id="fecharModal" style="background: var(--vermelho-fonte);
+  color: white;
+  font-weight: bold;
+  border-style: none;
+  position: absolute;
+  z-index: 9999;
+  padding: 5px 10px;
+  border-radius: 10px;
+  top: 10px;
+  right: 10px;">fechar</button>
     <div id="modalConteudo">
       
     </div>

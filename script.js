@@ -170,6 +170,7 @@ const date = new Date();
 // Definindo os compromissos diretamente no código
 const compromissos = {
     "2024-07-26": ["Convenção do PSTU (auditório do Sinpol) - 17:30"],
+	"2024-08-10": ["Inauguração da sede do PSTU (Rua Santo Antônio, 697, Cidade Alta. Em Frente a Igreja do Galo)  - 10:00"],
     // Adicione mais compromissos conforme necessário
 };
 
