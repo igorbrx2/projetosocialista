@@ -169,8 +169,9 @@ const date = new Date();
 
 // Definindo os compromissos diretamente no código
 const compromissos = {
-    "2024-07-26": ["Convenção do PSTU (auditório do Sinpol) - 17:30"],
 	"2024-08-10": ["Inauguração da sede do PSTU (Rua Santo Antônio, 697, Cidade Alta. Em Frente a Igreja do Galo)  - 10:00"],
+    "2024-08-15": ["Roda de conversa sobre meio ambiente, às 19h, online. (acompanhe as redes)"],
+    "2024-08-16": ["Agitação e panfletagem com militantes nas proximidades do Hospital Municipal de Natal - 06:00", "Agitação e panfletagem com militantes na Praça Cívica - 16:00", "Reunião com apoiadores na sede do PSTU, na Cidade Alta. (Rua Santo Antônio, 697, Cidade Alta. Em Frente a Igreja do Galo) - 18h"],
     // Adicione mais compromissos conforme necessário
 };
 
