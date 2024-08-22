@@ -31,7 +31,7 @@
     <nav>
       <ul id="nav-list" class="londrina-font">
         <li><a href="#manifesto">manifesto</a></li>
-        <li><a href="#pre-candidaturas">pré-candidatos</a></li>
+        <li><a href="#pre-candidaturas">candidatos</a></li>
         <!-- <li><a href="./">propostas</a></li> -->
         <li><a href="#agenda">agenda</a></li>
       </ul>
@@ -129,7 +129,7 @@
   <!-- CANDIDATURAS -->
 
   <section id="pre-candidaturas">
-    <h2 class="cactus-font">PRÉ-CANDIDATOS</h2>
+    <h2 class="cactus-font">CANDIDATOS</h2>
     <h3 class="cactus-font">PARA PREFEITURA</h3>
 
     <ul class="candidatos-pref container-1200">
@@ -137,7 +137,7 @@
       <li class="card-candidato" data-candidato="nandoPoeta">
         <a data-modal="abrir" href="#">
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/nando-poeta-card.png" alt="">
-          <span class="montserrat-font">Pré-candidato a Prefeito de Natal</span>
+          <span class="montserrat-font">Candidato a Prefeito de Natal</span>
           <div class="linha-vermelha"></div>
           <p class="montserrat-font">sociólogo, professor da rede pública e cordelista. Ele tem 61 anos e está há mais de 30 anos no partido.</p>
         </a>
@@ -146,7 +146,7 @@
       <li class="card-candidato" data-candidato="tiagoSilva">
         <a href="./">
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/tiago-silva-card.png" alt="">
-          <span class="montserrat-font">Pré-candidato a Vice-prefeito de Natal</span>
+          <span class="montserrat-font">Candidato a Vice-prefeito de Natal</span>
           <div class="linha-vermelha"></div>
           <p class="montserrat-font">jornalista, estudante de teatro na UFRN, poeta e performer. Ele está no partido desde 2016.</p>
         </a>
@@ -160,7 +160,7 @@
       <li class="card-candidato card-luciana" data-candidato="lucianaLima">
         <a href="./">
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/luciana-lima-card.png" alt="">
-          <span class="montserrat-font">Pré-candidata a vereadora de Natal</span>
+          <span class="montserrat-font">Candidata a vereadora de Natal</span>
           <div class="linha-vermelha-luciana"></div>
           <p class="montserrat-font">pedagoga de formação, professora da rede municipal e mãe. Iniciou sua militância no surgimento do PSTU.</p>
         </a>
@@ -169,7 +169,7 @@
       <li class="card-candidato" data-candidato="alexandreGuedes">
         <a href="./">
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/alexandre-guedes-card.png" alt="">
-          <span class="montserrat-font">Pré-candidato a mandato coletivo</span>
+          <span class="montserrat-font">Candidato a mandato coletivo</span>
           <div class="linha-laranja"></div>
           <p class="montserrat-font">funcionário público do Detran/RN, coordenador licenciado do Sinai. Alexandre está no partido desde 1999.</p>
         </a>
@@ -177,7 +177,7 @@
       <li class="card-candidato" data-candidato="ericaGuarani">
         <a href="./">
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/erica-guarani-card.png" alt="">
-          <span class="montserrat-font">Pré-candidata a mandato coletivo</span>
+          <span class="montserrat-font">Candidata a mandato coletivo</span>
           <div class="linha-laranja"></div>
           <p class="montserrat-font">mulher indígena potiguar, formada em ciências biológicas e técnica de enfermagem concursada.</p>
         </a>
@@ -185,7 +185,7 @@
       <li class="card-candidato" data-candidato="joseJairan">
         <a href="./">
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/jose-jairan-card.png" alt="">
-          <span class="montserrat-font">Pré-candidato a mandato coletivo</span>
+          <span class="montserrat-font">Candidato a mandato coletivo</span>
           <div class="linha-laranja"></div>
           <p class="montserrat-font">professor de matemática, constrói o Movimento Quilombo Raça e Classe e o Movimento Muda Sinte.</p>
         </a>
