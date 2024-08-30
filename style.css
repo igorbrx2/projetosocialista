@@ -442,7 +442,7 @@ Version: 1.0
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   margin: 50px auto;
 }
 
@@ -512,7 +512,7 @@ Version: 1.0
 .agenda {
   width: 450px;
   max-width: 95vw;
-  height: 300px;
+  height: auto;
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
