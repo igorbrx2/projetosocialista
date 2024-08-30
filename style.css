@@ -85,6 +85,7 @@ Version: 1.0
   justify-content: center;
   align-items: center;
   margin-bottom: 130px;
+  max-width: 90vw;
 }
 
 .titulo-intro h1 {
@@ -157,6 +158,8 @@ Version: 1.0
   max-height: 450px;
   overflow-y: scroll;
   margin-bottom: 10px;
+  line-height: 1.2;
+  font-size: 1.1rem;
 }
 
 #corpo-manifesto strong {
@@ -259,173 +262,6 @@ Version: 1.0
   width: calc(50% - 10px);
   height: 37px;
   cursor: pointer;
-}
-
-/* CANDIDATURAS */
-
-#pre-candidaturas {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 60px auto;
-}
-
-#pre-candidaturas h2 {
-  color: var(--vermelho-fonte);
-  font-size: 6.4rem;
-  margin-bottom: 15px;
-  max-width: 90vw;
-  text-align: center;
-}
-
-#pre-candidaturas h3 {
-  color: var(--azul-manifesto);
-  font-size: 4.5rem;
-  text-align: center;
-  max-width: 90vw;
-}
-
-.candidatos-pref {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  margin: 0 auto;
-  max-width: 90vw;
-  padding-bottom: 50px;
-  justify-content: center;
-}
-
-.card-candidato {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 500px;
-  max-width: 90vw;
-}
-
-.card-candidato img {
-  width: 500px;
-  max-width: 90vw;
-}
-
-.card-candidato span {
-  display: inline-block;
-  font-weight: bold;
-  font-size: 1.3rem;
-  line-height: 1.1;
-  margin-top: 10px;
-  margin-left: 20px;
-  max-width: 19ch;
-}
-
-.card-candidato p {
-  max-width: 30ch;
-  margin-top: 10px;
-  margin-left: 20px;
-  line-height: 1.2;
-}
-
-.linha-laranja {
-  display: block;
-  width: 200px;
-  border: 2px solid var(--laranja-fonte);
-  margin: 15px 15px 0px 20px;
-}
-
-.linha-vermelha {
-  display: block;
-  width: 200px;
-  border: 2px solid var(--vermelho-fonte);
-  margin: 15px 15px 0px 20px;
-}
-.linha-vermelha-luciana {
-  display: block;
-  width: 200px;
-  border: 2px solid var(--vermelho-fonte);
-  margin: 15px 15px 0px 10px;
-}
-
-.card-luciana {
-  margin-right: 30px;
-}
-
-.mandato-coletivo {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  max-width: 90vw;
-  justify-content: center;
-  align-items: center;
-}
-
-.mandato-coletivo .card-candidato {
-  width: 250px;
-  max-width: 90vw;
-}
-
-.mandato-coletivo .linha-laranja {
-  width: 180px;
-  margin-left: 10px;
-}
-
-.mandato-coletivo img {
-  width: 240px;
-  max-width: 90vw;
-}
-
-.mandato-coletivo span {
-  font-size: 1.1rem;
-  margin-left: 10px;
-}
-
-.mandato-coletivo p {
-  margin-left: 10px;
-}
-
-/* faça parte */
-
-.bg-faca-parte {
-  background-color: var(--vermelho-bg);
-}
-
-#faca-parte {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin-top: 50px;
-  padding: 30px 0;
-  gap: 50px;
-}
-
-.clique-aqui {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-.clique-aqui h2 {
-  font-size: 2rem;
-  color: var(--amarelo-fonte);
-}
-
-.clique-aqui button {
-  color: white;
-  background-color: var(--verde-whatsapp);
-  font-size: 1.8rem;
-  border: none;
-  border-radius: 10px;
-  padding: 10px 100px;
-  max-width: 25ch;
-}
-
-.vamos-trilhar p {
-  color: white;
-  font-size: 1.6rem;
 }
 
 /* AGENDA */
@@ -558,4 +394,178 @@ Version: 1.0
 
 #rodape span {
   color: white;
+}
+
+/* CANDIDATURAS NOVO */
+
+#conhecaCandidaturas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+
+#conhecaCandidaturas h1 {
+  color: #434343;
+  font-weight: bold;
+  font-size: 3rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cardsCandidaturas {
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+  width: 1000px;
+  max-width: 90vw;
+  overflow-x: auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+
+.cardsCandidaturas img {
+  width: 280px;
+  cursor: pointer;
+  transition: ease-in-out .3s;
+}
+
+.cardsCandidaturas img:hover {
+  transform: scale(.95);
+}
+
+.cardsCandidaturas img:active {
+  filter: grayscale(80%);
+}
+
+/* CONTRIBUIÇÃO */
+#contribuicao {
+  background: url(./assets/bgAzul.png) center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contribuicao {
+  display: flex;
+  flex-direction: column;
+}
+
+.contribuicao h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+  margin-bottom: 5px;
+  margin-top: 30px;
+}
+
+.contribuicao p {
+  font-size: 2rem;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+}
+
+.divCopiar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.divCopiar p {
+  margin-top: 5px;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.divCopiar p b {
+  font-weight: 500;
+}
+
+.QRCode {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.QRCode .QR {
+  width: 130px;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 3px 7px 0px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 3px 3px 7px 0px rgba(0, 0, 0, 0.32);
+  box-shadow: 3px 3px 7px 0px rgba(0, 0, 0, 0.32);
+}
+
+.QRCode .copiar {
+  width: 250px;
+}
+
+#successMessage {
+  font-size: 1.2rem;
+  border-radius: 15px;
+  line-height: 1.2;
+  font-weight: 500;
+  margin: 0 auto;
+  max-width: 90vw;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* CARTILHA */
+#cartilha {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 40px 0 0 0;
+}
+
+#cartilha img {
+  width: 285px;
+}
+
+.propostas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.propostas h1 {
+  color: #434343;
+  font-weight: 900;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.btnPropostas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }

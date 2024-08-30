@@ -31,8 +31,7 @@
     <nav>
       <ul id="nav-list" class="londrina-font">
         <li><a href="#manifesto">manifesto</a></li>
-        <li><a href="#pre-candidaturas">candidatos</a></li>
-        <!-- <li><a href="./">propostas</a></li> -->
+        <li><a href="#conhecaCandidaturas">candidatos</a></li>
         <li><a href="#agenda">agenda</a></li>
       </ul>
 
@@ -60,7 +59,7 @@
     <article id="corpo-manifesto" class="container-1200">
       <h1 class="cactus-font">MANIFESTO</h1>
       <h2 class="montserrat-font">DO CAOS À ESPERANÇA:<br> O caminho para uma Natal Socialista</h2>
-      <p>Natal não é a mesma para todos. Nossa cidade não oferece o mínimo de infraestrutura nas periferias, como saneamento básico e espaços de lazer e cultura. O transporte público, que deveria ser um direito essencial, é controlado há décadas por uma máfia de empresários. Nas creches, as vagas são definidas por sorteio e nossos filhos não têm o direito de estudar.<br>
+      <p class="montserrat-font">Natal não é a mesma para todos. Nossa cidade não oferece o mínimo de infraestrutura nas periferias, como saneamento básico e espaços de lazer e cultura. O transporte público, que deveria ser um direito essencial, é controlado há décadas por uma máfia de empresários. Nas creches, as vagas são definidas por sorteio e nossos filhos não têm o direito de estudar.<br>
 
         <br>Na saúde, a população só encontra UPAs lotadas, Unidades Básicas precárias, maternidade e hospital desmantelados. Faltam leitos, exames, equipamentos e muitos profissionais. O colapso só não é total graças ao sacrifício dos servidores. Enquanto isso, recursos do SUS escorrem para o setor privado, através de terceirizações e da privatização do serviço. Nem mesmo a dignidade de ter um lugar para morar é garantida, com um número crescente de pessoas em situação de rua, desamparadas, esquecidas no desemprego e na miséria. Definitivamente, Natal não é a mesma cidade para todos.<br>
 
@@ -104,7 +103,7 @@
 
     <button class="btn-quemassinou montserrat-font">veja quem assinou</button>
     <div id="subscriber-container">
-    <ul id="subscriber-list"></ul>
+      <ul id="subscriber-list"></ul>
     </div>
 
     <div class="bg-assina-manifesto">
@@ -124,130 +123,89 @@
 
   </div>
 
-  <!-- FIM DO MANIFESTO -->
+  <!-- NOVAS CANDIDATURAS -->
+  <article id="conhecaCandidaturas">
+    <h1 class="montserrat-font">CLIQUE EM CIMA E CONHEÇA</h1>
+    <ul class="cardsCandidaturas">
+      <li class="candidato" data-candidato="prefeitura"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/cardPrefeitura.png" alt=""></li>
 
-  <!-- CANDIDATURAS -->
+      <li class="candidato" data-candidato="bancadaSocialista"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/cardBancada.png" alt=""></li>
 
-  <section id="pre-candidaturas">
-    <h2 class="cactus-font">CANDIDATOS</h2>
-    <h3 class="cactus-font">PARA PREFEITURA</h3>
-
-    <ul class="candidatos-pref container-1200">
-
-      <li class="card-candidato" data-candidato="nandoPoeta">
-        <a data-modal="abrir" href="#">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/nando-poeta-card.png" alt="">
-          <span class="montserrat-font">Candidato a Prefeito de Natal</span>
-          <div class="linha-vermelha"></div>
-          <p class="montserrat-font">sociólogo, professor da rede pública e cordelista. Ele tem 61 anos e está há mais de 30 anos no partido.</p>
-        </a>
-      </li>
-
-      <li class="card-candidato" data-candidato="tiagoSilva">
-        <a href="./">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/tiago-silva-card.png" alt="">
-          <span class="montserrat-font">Candidato a Vice-prefeito de Natal</span>
-          <div class="linha-vermelha"></div>
-          <p class="montserrat-font">jornalista, estudante de teatro na UFRN, poeta e performer. Ele está no partido desde 2016.</p>
-        </a>
-      </li>
-
+      <li class="candidato" data-candidato="luciana"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/cardLuciana.png" alt=""></li>
     </ul>
+  </article>
 
-    <h3 class="cactus-font">PARA VEREADORES</h3>
-
-    <ul class="mandato-coletivo container-1200">
-      <li class="card-candidato card-luciana" data-candidato="lucianaLima">
-        <a href="./">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/luciana-lima-card.png" alt="">
-          <span class="montserrat-font">Candidata a vereadora de Natal</span>
-          <div class="linha-vermelha-luciana"></div>
-          <p class="montserrat-font">pedagoga de formação, professora da rede municipal e mãe. Iniciou sua militância no surgimento do PSTU.</p>
-        </a>
-      </li>
-
-      <li class="card-candidato" data-candidato="alexandreGuedes">
-        <a href="./">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/alexandre-guedes-card.png" alt="">
-          <span class="montserrat-font">Candidato a mandato coletivo</span>
-          <div class="linha-laranja"></div>
-          <p class="montserrat-font">funcionário público do Detran/RN, coordenador licenciado do Sinai. Alexandre está no partido desde 1999.</p>
-        </a>
-      </li>
-      <li class="card-candidato" data-candidato="ericaGuarani">
-        <a href="./">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/erica-guarani-card.png" alt="">
-          <span class="montserrat-font">Candidata a mandato coletivo</span>
-          <div class="linha-laranja"></div>
-          <p class="montserrat-font">mulher indígena potiguar, formada em ciências biológicas e técnica de enfermagem concursada.</p>
-        </a>
-      </li>
-      <li class="card-candidato" data-candidato="joseJairan">
-        <a href="./">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/jose-jairan-card.png" alt="">
-          <span class="montserrat-font">Candidato a mandato coletivo</span>
-          <div class="linha-laranja"></div>
-          <p class="montserrat-font">professor de matemática, constrói o Movimento Quilombo Raça e Classe e o Movimento Muda Sinte.</p>
-        </a>
-      </li>
-    </ul>
-
+  <!-- CONTRIBUIÇÃO FINANCEIRA -->
+  <section id="contribuicao">
+    <div class="contribuicao montserrat-font">
+      <h2>CONTRIBUIÇÃO FINANCEIRA</h2>
+      <p>Copie o Pix ou Scaneie o QR Code</p>
+    </div>
+    <div class="QRCode">
+      <div class="divCopiar">
+      <a href="#" id="copyLink"><img class="copiar" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/btnCopiar.png" alt=""></a>
+      <p class="montserrat-font">Pix: <b>56.256.408/0001-83</b></p>
+      </div>
+      <img class="QR" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/qrCodeContribuicao.png" alt="">
+    </div>
   </section>
 
-  <div class="bg-faca-parte">
-    <section id="faca-parte">
-      <div class="clique-aqui">
-        <h2 class="cactus-font">FAÇA PARTE</h2>
-        <button class="cactus-font"><a href="https://wa.me/5584991334508" target="_blank">Clica aqui para participar</a></button>
+  <!-- CARTILHA -->
+  <section id="cartilha">
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/cartilhas.png" alt="">
+    <div class="propostas">
+      <h1 class="montserrat-font">ACESSE NOSSAS<br>PROPOSTAS</h1>
+      <div class="btnPropostas">
+        <a href=""><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/btnBaixar.png" alt=""></a>
+        <a href=""><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/btnLer.png" alt=""></a>
       </div>
-
-      <div class="vamos-trilhar">
-        <p class="cactus-font">
-          Vamos trilhar essa jornada juntos!<br>
-          <br>Clique no botão para fazer parte da construção de<br>um projeto socialista para Natal.<br>
-          <br>Ao fazer parte da nossa lista de transmissão no<br>WhatsApp, você receberá informações exclusivas<br> sobre nossa campanha
-        </p>
-      </div>
-    </section>
-  </div>
+    </div>
+  </section>
 
   <!-- AGENDA -->
-
   <div class="container" id="agenda">
     <div class="calendar">
       <div class="eventos"><span class="montserrat-font">EVENTOS</span></div>
-        <div class="month">
-            <i class="prev">❮</i>
-            <div class="date">
-                <h1></h1>
-                <p class="montserrat-font"></p>
-            </div>
-            <i class="next">❯</i>
+      <div class="month">
+        <i class="prev">❮</i>
+        <div class="date">
+          <h1></h1>
+          <p class="montserrat-font"></p>
         </div>
-        <div class="weekdays">
-            <div>Dom</div>
-            <div>Seg</div>
-            <div>Ter</div>
-            <div>Qua</div>
-            <div>Qui</div>
-            <div>Sex</div>
-            <div>Sáb</div>
-        </div>
-        <div class="days"></div>
+        <i class="next">❯</i>
+      </div>
+      <div class="weekdays">
+        <div>Dom</div>
+        <div>Seg</div>
+        <div>Ter</div>
+        <div>Qua</div>
+        <div>Qui</div>
+        <div>Sex</div>
+        <div>Sáb</div>
+      </div>
+      <div class="days"></div>
     </div>
     <div class="agenda">
       <div class="prox-eventos"><span class="montserrat-font">PRÓXIMOS EVENTOS</span></div>
-        <div class="events"></div>
+      <div class="events"></div>
     </div>
-</div>
+  </div>
 
-<!-- FOOTER -->
+  <!-- Modal para a mensagem de sucesso -->
+  <div id="successMessage" class="montserrat-font">
+    Código copiado com sucesso! Pague o PIX no aplicativo do seu banco.
+  </div>
 
-<footer id="rodape">
-  <span>Desenvolvido pela Poti Comunicação.</span>
-</footer>
+  <!-- Overlay para cobrir o fundo -->
+  <div id="overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 999;"></div>
 
-<section class="modalNando-container" id="modal" style="position: fixed;
+  <!-- FOOTER -->
+
+  <footer id="rodape">
+    <span>Desenvolvido pela Poti Comunicação.</span>
+  </footer>
+
+  <section class="modalNando-container" id="modal" style="position: fixed;
   top: 0;
   left: 0;
   height: 100%;
@@ -257,7 +215,7 @@
   z-index: 999;
   justify-content: center;
   align-items: center;">
-  <div class="modalNando" style="background: white;
+    <div class="modalNando" style="background: white;
   text-align: start;
   height: 70vh;
   width: 800px;
@@ -269,7 +227,7 @@
   align-items: center;
   box-shadow: 10px 10px 22px -3px rgba(0,0,0,0.4);
   position: relative;">
-    <button data-modal="fechar" class="botaoFechar" id="fecharModal" style="background: var(--vermelho-fonte);
+      <button data-modal="fechar" class="botaoFechar" id="fecharModal" style="background: var(--vermelho-fonte);
   color: white;
   font-weight: bold;
   border-style: none;
@@ -279,59 +237,59 @@
   border-radius: 10px;
   top: 10px;
   right: 10px;">fechar</button>
-    <div id="modalConteudo">
-      
+      <div id="modalConteudo">
+
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<script>
-        function validateForm() {
-    var fullname = document.getElementById('fullname').value;
-    var phone = document.getElementById('phone').value;
-    var occupation = document.getElementById('occupation').value;
-    var phonePattern = /^\d{10}$/;
+  <script>
+    function validateForm() {
+      var fullname = document.getElementById('fullname').value;
+      var phone = document.getElementById('phone').value;
+      var occupation = document.getElementById('occupation').value;
+      var phonePattern = /^\d{10}$/;
 
-    if (fullname.trim() === "") {
+      if (fullname.trim() === "") {
         alert("Nome completo não pode ser vazio.");
         return false;
-    }
+      }
 
-    if (phone.trim() === "") {
+      if (phone.trim() === "") {
         alert("Número de telefone não pode ser vazio.");
         return false;
-    }
+      }
 
-    if (!phonePattern.test(phone)) {
+      if (!phonePattern.test(phone)) {
         alert("Por favor, insira um número de telefone válido (10 dígitos).");
         return false;
+      }
+      return true;
     }
-    return true;
-}
-        /***
-         * 
-         *  Esse script é responsavel por fazer o fetch do JSON
-         *  e popular o local com os nomes 
-         * 
-         */
-        document.addEventListener('DOMContentLoaded', function() {
-            fetch('<?php echo get_stylesheet_directory_uri(); ?>/subscribes.json')
-                .then(response => response.json())
-                .then(data => {
-                    const list = document.getElementById('subscriber-list');
-                    data.forEach(subscriber => {
-                        const listItem = document.createElement('li');
-                        listItem.textContent = subscriber.fullname;
-                        list.appendChild(listItem);
-                    });
-                })
-                .catch(error => {
-                    console.error('Error fetching the subscriber list:', error);
-                });
+    /***
+     * 
+     *  Esse script é responsavel por fazer o fetch do JSON
+     *  e popular o local com os nomes 
+     * 
+     */
+    document.addEventListener('DOMContentLoaded', function () {
+      fetch('<?php echo get_stylesheet_directory_uri(); ?>/subscribes.json')
+        .then(response => response.json())
+        .then(data => {
+          const list = document.getElementById('subscriber-list');
+          data.forEach(subscriber => {
+            const listItem = document.createElement('li');
+            listItem.textContent = subscriber.fullname;
+            list.appendChild(listItem);
+          });
+        })
+        .catch(error => {
+          console.error('Error fetching the subscriber list:', error);
         });
+    });
 
-</script>
-<script src="<?php echo get_stylesheet_directory_uri(); ?>/script.js"></script>
+  </script>
+  <script src="<?php echo get_stylesheet_directory_uri(); ?>/script.js"></script>
 </body>
 
 </html>
