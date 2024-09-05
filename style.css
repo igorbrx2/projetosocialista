@@ -535,12 +535,13 @@ Version: 1.0
 
 /* CARTILHA */
 #cartilha {
+  background: var(--azul-manifesto);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  padding: 40px 0 0 0;
+  padding: 40px 0 40px 0;
 }
 
 #cartilha img {
@@ -555,7 +556,7 @@ Version: 1.0
 }
 
 .propostas h1 {
-  color: #434343;
+  color: var(--amarelo-fonte);
   font-weight: 900;
   font-size: 3rem;
   margin-bottom: 20px;

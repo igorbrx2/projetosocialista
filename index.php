@@ -1,48 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<?php
+// Template Name: Page Home
+?>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projeto Socialista</title>
-  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/global.css" />
-  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" />
-  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/responsivo.css" />
-
-  <link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon.ico" type="image/x-icon">
-
-
-  <!-- londrina font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap" rel="stylesheet">
-  <!-- montserrat font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-</head>
-
-<body>
-
-  <!-- MENU -->
-  <header id="cabecalho">
-    <div class="logo"><a href="./"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logo-pstu.png" alt=""></a></div>
-    <nav>
-      <ul id="nav-list" class="londrina-font">
-        <li><a href="#manifesto">manifesto</a></li>
-        <li><a href="#conhecaCandidaturas">candidatos</a></li>
-        <li><a href="#agenda">agenda</a></li>
-      </ul>
-
-    </nav>
-    <div class="mobile-menu">
-      <div class="line1"></div>
-      <div class="line2"></div>
-      <div class="line3"></div>
-    </div>
-  </header>
-  <!-- FIM DO MENU -->
+<?php get_header(); ?>
 
   <!-- INTRODUÇÃO -->
   <section id="intro">
@@ -136,7 +96,7 @@
   </article>
 
   <!-- CONTRIBUIÇÃO FINANCEIRA -->
-  <section id="contribuicao">
+  <!-- <section id="contribuicao">
     <div class="contribuicao montserrat-font">
       <h2>CONTRIBUIÇÃO FINANCEIRA</h2>
       <p>Copie o Pix ou Scaneie o QR Code</p>
@@ -148,7 +108,7 @@
       </div>
       <img class="QR" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/qrCodeContribuicao.png" alt="">
     </div>
-  </section>
+  </section> -->
 
   <!-- CARTILHA -->
   <section id="cartilha">
@@ -156,8 +116,8 @@
     <div class="propostas">
       <h1 class="montserrat-font">ACESSE NOSSAS<br>PROPOSTAS</h1>
       <div class="btnPropostas">
-        <a href=""><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/btnBaixar.png" alt=""></a>
-        <a href=""><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/btnLer.png" alt=""></a>
+        <a href="<?php echo get_stylesheet_directory_uri(); ?>/assets/projetoSocialistaNatal.pdf" download><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/btnBaixar.png" alt=""></a>
+        <a href="<?php echo get_stylesheet_directory_uri(); ?>/assets/projetoSocialistaNatal.pdf" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/btnLer.png" alt=""></a>
       </div>
     </div>
   </section>
@@ -199,12 +159,7 @@
   <!-- Overlay para cobrir o fundo -->
   <div id="overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 999;"></div>
 
-  <!-- FOOTER -->
-
-  <footer id="rodape">
-    <span>Desenvolvido pela Poti Comunicação.</span>
-  </footer>
-
+  <!-- Modal para textos dos candidatos -->
   <section class="modalNando-container" id="modal" style="position: fixed;
   top: 0;
   left: 0;
@@ -243,53 +198,5 @@
     </div>
   </section>
 
-  <script>
-    function validateForm() {
-      var fullname = document.getElementById('fullname').value;
-      var phone = document.getElementById('phone').value;
-      var occupation = document.getElementById('occupation').value;
-      var phonePattern = /^\d{10}$/;
+  <?php get_footer(); ?>
 
-      if (fullname.trim() === "") {
-        alert("Nome completo não pode ser vazio.");
-        return false;
-      }
-
-      if (phone.trim() === "") {
-        alert("Número de telefone não pode ser vazio.");
-        return false;
-      }
-
-      if (!phonePattern.test(phone)) {
-        alert("Por favor, insira um número de telefone válido (10 dígitos).");
-        return false;
-      }
-      return true;
-    }
-    /***
-     * 
-     *  Esse script é responsavel por fazer o fetch do JSON
-     *  e popular o local com os nomes 
-     * 
-     */
-    document.addEventListener('DOMContentLoaded', function () {
-      fetch('<?php echo get_stylesheet_directory_uri(); ?>/subscribes.json')
-        .then(response => response.json())
-        .then(data => {
-          const list = document.getElementById('subscriber-list');
-          data.forEach(subscriber => {
-            const listItem = document.createElement('li');
-            listItem.textContent = subscriber.fullname;
-            list.appendChild(listItem);
-          });
-        })
-        .catch(error => {
-          console.error('Error fetching the subscriber list:', error);
-        });
-    });
-
-  </script>
-  <script src="<?php echo get_stylesheet_directory_uri(); ?>/script.js"></script>
-</body>
-
-</html>
