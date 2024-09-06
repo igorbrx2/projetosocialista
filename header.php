@@ -32,9 +32,10 @@
     <div class="logo"><a href="./"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logo-pstu.png" alt=""></a></div>
     <nav>
       <ul id="nav-list" class="londrina-font">
-        <li><a href="#manifesto">manifesto</a></li>
-        <li><a href="#conhecaCandidaturas">candidatos</a></li>
-        <li><a href="#agenda">agenda</a></li>
+        <li><a class="menuLink" href="#manifesto">manifesto</a></li>
+        <li><a class="menuLink" href="#conhecaCandidaturas">candidatos</a></li>
+        <li><a class="menuLink" href="#cartilha">propostas</a></li>
+        <li><a class="menuLink" href="#agenda">agenda</a></li>
       </ul>
 
     </nav>

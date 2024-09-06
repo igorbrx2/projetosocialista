@@ -5,13 +5,27 @@
 <?php get_header(); ?>
 
   <!-- INTRODUÇÃO -->
-  <section id="intro">
-    <div class="titulo-intro">
-      <h1 class="cactus-font">PROJETO<br>SOCIALISTA</h1>
-      <h2 class="twilight-font">Para Natal</h2>
-      <button class="londrina-font"><a href="https://wa.me/5584991334508" target="_blank">Fala com a gente no whatsapp</a></button>
-    </div>
-  </section>
+  <div id="introSlide" class="introSlide">
+        <div class="introNando montserrat-font">
+          <h1><strong>16</strong><br><b>NATAL</b><br><span>SOCIALISTA</span></h1>
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/nandoTiago.png" alt="Nando Poeta e Tiago Silva">
+        </div>
+
+        <div class="introBancada montserrat-font">
+          <h1><strong>16123</strong><br><b>TRABALHADORES</b><br><span>SOCIALISTAS</span><br><span class="noPoder">NO PODER</span></h1>
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/bancadaSocialista.png" alt="Bancada Socialista: Érica Guarani, Alexandre Guedes e José Jairan">
+        </div>
+
+        <div class="introLuciana montserrat-font">
+          <h1><strong>16789</strong><br><b>MULHERES</b><br><span>SOCIALISTAS</span><br><span class="noPoder">NO PODER</span></h1>
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/lucianaIntro.png" alt="Luciana Lima">
+        </div>
+</div>
+
+
+  <div class="whatsapp">
+    <a href="https://wa.me/5584991334508" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/botaoZap.png" alt="fale com a gente"></a>
+  </div>
   <!-- FIM DA INTRO -->
 
   <!-- MANIFESTO -->
@@ -87,11 +101,11 @@
   <article id="conhecaCandidaturas">
     <h1 class="montserrat-font">CLIQUE EM CIMA E CONHEÇA</h1>
     <ul class="cardsCandidaturas">
-      <li class="candidato" data-candidato="prefeitura"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/cardPrefeitura.png" alt=""></li>
+      <li class="candidato" data-candidato="prefeitura"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/cardPrefeitura.png" alt="Nando Poeta e Tiago Silva, candidatos a prefeitura do Natal"></li>
 
-      <li class="candidato" data-candidato="bancadaSocialista"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/cardBancada.png" alt=""></li>
+      <li class="candidato" data-candidato="bancadaSocialista"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/cardBancada.png" alt="Bancada Socialista: Érica Potyguara, José Jairan e Alexandre Guedes"></li>
 
-      <li class="candidato" data-candidato="luciana"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/cardLuciana.png" alt=""></li>
+      <li class="candidato" data-candidato="luciana"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/cardLuciana.png" alt="Luciana Lima, candidata a vereadora"></li>
     </ul>
   </article>
 

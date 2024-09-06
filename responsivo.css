@@ -24,23 +24,9 @@
         margin-top: -50px;
         font-size: 4rem;
     }
-
 }
 
 @media (max-width: 575px) {
-
-    #intro button {
-        max-width: 90vw;
-        padding: 5px 15px;
-    } 
-    .titulo-intro h1 {
-        font-size: 5rem;
-    }
-
-    .titulo-intro h2 {
-        font-size: 4rem;
-        margin-top: -20px;
-    }
 
     #corpo-manifesto h1 {
         margin-top: -50px;
@@ -49,6 +35,56 @@
 
     #corpo-manifesto h2 {
         font-size: 1.6rem;
+    }
+    .introNando h1 strong{
+        font-size: 20rem;
+        max-width: 90vw;
+    }
+
+    .introBancada h1 strong{
+        font-size: 7.4rem;
+        max-width: 90vw;
+    }
+
+    .introLuciana h1 strong{
+        font-size: 6.5rem;
+        max-width: 90vw;
+    }
+
+    .introNando h1 b {
+        font-size: 5.7rem;
+    }
+
+    .introBancada h1 b {
+        font-size: 2rem;
+    }
+
+    .introLuciana h1 b {
+        font-size: 3.3rem;
+    }
+
+    .introNando h1 span {
+        font-size: 3.3rem;
+    }
+
+    .introBancada h1 span {
+        font-size: 2.75rem;
+    }
+
+    .introLuciana h1 span {
+        font-size: 2.75rem;
+    }
+
+    .introBancada .noPoder {
+        font-size: 3.4rem;
+    }
+
+    .introLuciana .noPoder {
+        font-size: 3.4rem;
+    }
+
+    .whatsapp {
+        margin-bottom: 30px;
     }
 
 }
@@ -98,5 +134,11 @@
     .QRCode {
         gap: 20px;
       }
+
+    .introNando h1, .introBancada h1, .introLuciana h1 {
+        margin-top: 11%;
+    }
+
+
 
 }

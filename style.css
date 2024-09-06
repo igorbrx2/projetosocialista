@@ -79,54 +79,182 @@ Version: 1.0
 
 /* IMAGEM DE INTRODUÇÃO */
 
-.titulo-intro {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 130px;
-  max-width: 90vw;
-}
-
-.titulo-intro h1 {
-  line-height: 0.8;
-  font-size: 8rem;
-  text-align: center;
-  color: var(--vermelho-fonte);
-}
-
-.titulo-intro h2 {
-  font-size: 6.5rem;
-  color: var(--laranja-fonte);
-  margin-top: -25px;
-}
-
-#intro {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.introSlide {
+  position: relative;
   width: 100%;
-  height: calc(100vh + 100px);
-  background: url(./assets/projeto-socialista.png) center 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
+  height: auto;
+  overflow: hidden;
 }
 
-#intro button {
+.introSlide > div {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.introSlide > div.active {
+  opacity: 1;
+  position: relative;
+}
+
+
+ /* nando */
+.introNando {
+  background: url(./assets/bg1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   display: flex;
-  padding: 2px 15px;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-color: var(--verde-whatsapp);
-  color: white;
-  border: none;
-  border-radius: 10px;
-  font-size: 2rem;
-  margin-top: 50px;
-  transition: ease-in-out 0.5s;
 }
-#intro button:hover {
-  transform: scale(1.1);
+
+.introNando img {
+  width: 700px;
+  max-width: 90vw;
+  margin-top: 5%;
+}
+
+.introNando h1 {
+  line-height: .8;
+  max-width: 90vw;
+  align-self: center;
+  margin-top: 3%;
+  text-align: center;
+}
+
+.introNando h1 strong {
+  color: white;
+  font-size: 25rem;
+  font-weight: 900;
+}
+
+.introNando h1 b {
+  color: white;
+  font-weight: 900;
+  font-size: 7rem;
+}
+
+.introNando h1 span {
+  color: white;
+  font-weight: 900;
+  font-size: 3.9rem;
+}
+
+/* bancada */
+.introBancada {
+  background: url(./assets/bg2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.introBancada img {
+  width: 700px;
+  max-width: 90vw;
+  margin-top: 5%;
+}
+
+.introBancada h1 {
+  line-height: .8;
+  max-width: 90vw;
+  align-self: center;
+  margin-top: 3%;
+  text-align: center;
+}
+
+.introBancada h1 strong {
+  color: white;
+  font-size: 13rem;
+  font-weight: 900;
+}
+
+.introBancada h1 b {
+  color: white;
+  font-weight: 900;
+  font-size: 3.6rem;
+}
+
+.introBancada h1 span {
+  color: white;
+  font-weight: 900;
+  font-size: 4.9rem;
+}
+
+.introBancada .noPoder {
+  color: white;
+  font-weight: 900;
+  font-size: 6rem;
+}
+
+/* luciana */
+.introLuciana {
+  background: url(./assets/bg3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.introLuciana img {
+  width: 600px;
+  max-width: 90vw;
+  margin-top: 5%;
+}
+
+.introLuciana h1 {
+  line-height: .8;
+  max-width: 90vw;
+  align-self: center;
+  margin-top: 3%;
+  text-align: center;
+}
+
+.introLuciana h1 strong {
+  color: white;
+  font-size: 13rem;
+  font-weight: 900;
+}
+
+.introLuciana h1 b {
+  color: white;
+  font-weight: 900;
+  font-size: 6.5rem;
+}
+
+.introLuciana h1 span {
+  color: white;
+  font-weight: 900;
+  font-size: 5.4rem;
+}
+
+.introLuciana .noPoder {
+  color: white;
+  font-weight: 900;
+  font-size: 6.7rem;
+}
+
+
+.whatsapp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--verde-whatsapp);
+  padding: 30px 0 20px 0;
+}
+
+.whatsapp a img {
+  width: 50rem;
+  max-width: 90vw;
 }
 
 /* MANIFESTO */

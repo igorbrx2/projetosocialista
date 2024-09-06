@@ -2,7 +2,7 @@
   <footer id="rodape">
     <span>Desenvolvido pela Poti Comunicação.</span>
   </footer>
-
+  <script src="<?php echo get_stylesheet_directory_uri(); ?>/jquery.js"></script>
   <script>
     function validateForm() {
       var fullname = document.getElementById('fullname').value;
@@ -50,7 +50,6 @@
 
   </script>
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/script.js"></script>
-
   <?php wp_footer(); ?>
   
 </body>
