@@ -377,30 +377,4 @@ document.getElementById('copyLink').addEventListener('click', function(event) {
     }
   });
 
-//   SLIDES INTRO
 
-document.addEventListener('DOMContentLoaded', function () {
-    let slides = document.querySelectorAll('.introSlide > div');
-    let currentIndex = 0;
-    const slideInterval = 3000;
-
-    // Função para ativar o próximo slide
-    function showNextSlide() {
-        // Remove a classe active do slide atual
-        slides[currentIndex].classList.remove('active');
-        
-        // Incrementa o índice para o próximo slide
-        currentIndex = (currentIndex + 1) % slides.length;
-        
-        // Adiciona a classe active ao próximo slide
-        slides[currentIndex].classList.add('active');
-    }
-
-    // Inicia com o primeiro slide ativo
-    slides[currentIndex].classList.add('active');
-
-    // Configura o intervalo de troca de slides
-    setInterval(showNextSlide, slideInterval);
-});
-
-  

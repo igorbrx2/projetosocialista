@@ -5,22 +5,23 @@
 <?php get_header(); ?>
 
   <!-- INTRODUÇÃO -->
-  <div id="introSlide" class="introSlide">
-        <div class="introNando montserrat-font">
-          <h1><strong>16</strong><br><b>NATAL</b><br><span>SOCIALISTA</span></h1>
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/nandoTiago.png" alt="Nando Poeta e Tiago Silva">
-        </div>
+<div id="introSlide">
+  <div class="introNando montserrat-font slide">
+    <h1><strong>16</strong><br><b>NATAL</b><br><span>SOCIALISTA</span></h1>
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/nandoTiago.png" alt="Nando Poeta e Tiago Silva">
+  </div>
 
-        <div class="introBancada montserrat-font">
-          <h1><strong>16123</strong><br><b>TRABALHADORES</b><br><span>SOCIALISTAS</span><br><span class="noPoder">NO PODER</span></h1>
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/bancadaSocialista.png" alt="Bancada Socialista: Érica Guarani, Alexandre Guedes e José Jairan">
-        </div>
+  <div class="introBancada montserrat-font slide">
+    <h1><strong>16123</strong><br><b>TRABALHADORES</b><br><span>SOCIALISTAS</span><br><span class="noPoder">NO PODER</span></h1>
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/bancadaSocialista.png" alt="Bancada Socialista: Érica Guarani, Alexandre Guedes e José Jairan">
+  </div>
 
-        <div class="introLuciana montserrat-font">
-          <h1><strong>16789</strong><br><b>MULHERES</b><br><span>SOCIALISTAS</span><br><span class="noPoder">NO PODER</span></h1>
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/lucianaIntro.png" alt="Luciana Lima">
-        </div>
+  <div class="introLuciana montserrat-font slide">
+    <h1><strong>16789</strong><br><b>MULHERES</b><br><span>SOCIALISTAS</span><br><span class="noPoder">NO PODER</span></h1>
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/lucianaIntro.png" alt="Luciana Lima">
+  </div>
 </div>
+
 
 
   <div class="whatsapp">

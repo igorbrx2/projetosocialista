@@ -2,7 +2,9 @@
   <footer id="rodape">
     <span>Desenvolvido pela Poti Comunicação.</span>
   </footer>
+  <!-- script para jquery -->
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/jquery.js"></script>
+  <!-- script para form -->
   <script>
     function validateForm() {
       var fullname = document.getElementById('fullname').value;
@@ -49,7 +51,34 @@
     });
 
   </script>
+  <!-- script.js -->
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/script.js"></script>
+  <!-- script para intro -->
+  <script>document.addEventListener("DOMContentLoaded", function() {
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('#introSlide .slide');
+  const totalSlides = slides.length;
+
+  function showSlide(index) {
+    slides.forEach(slide => {
+      slide.classList.remove('active');
+      slide.style.display = 'none';
+    });
+
+    slides[index].classList.add('active');
+    slides[index].style.display = 'flex';
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    showSlide(currentSlide);
+  }
+
+  showSlide(currentSlide);
+
+  setInterval(nextSlide, 3000);
+});
+</script>
   <?php wp_footer(); ?>
   
 </body>
