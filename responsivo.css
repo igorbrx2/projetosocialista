@@ -1,24 +1,5 @@
 @media (max-width: 390px) {
 
-    .titulo-intro h1 {
-        font-size: 3rem;
-    }
-
-    .titulo-intro h2 {
-        font-size: 3.5rem;
-        margin-top: -15px;
-    }
-
-    #intro {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100vh;
-        background: url(./assets/projeto-socialista.png) center 50%;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
 
     #corpo-manifesto h1 {
         margin-top: -50px;
@@ -36,9 +17,22 @@
     #corpo-manifesto h2 {
         font-size: 1.6rem;
     }
-    .introNando h1 strong{
-        font-size: 20rem;
-        max-width: 90vw;
+
+
+    .introNando h1 strong {
+        font-size: 17rem;
+    }
+
+    .introNando h1 b {
+        font-size: 5rem;
+    }
+
+    .introNando h1 span {
+        font-size: 2.8rem;
+    }
+
+    .introBancada h1 b {
+        font-size: 2rem;
     }
 
     .introBancada h1 strong{
@@ -46,32 +40,7 @@
         max-width: 90vw;
     }
 
-    .introLuciana h1 strong{
-        font-size: 6.5rem;
-        max-width: 90vw;
-    }
-
-    .introNando h1 b {
-        font-size: 5.7rem;
-    }
-
-    .introBancada h1 b {
-        font-size: 2rem;
-    }
-
-    .introLuciana h1 b {
-        font-size: 3.3rem;
-    }
-
-    .introNando h1 span {
-        font-size: 3.3rem;
-    }
-
     .introBancada h1 span {
-        font-size: 2.75rem;
-    }
-
-    .introLuciana h1 span {
         font-size: 2.75rem;
     }
 
@@ -79,8 +48,25 @@
         font-size: 3.4rem;
     }
 
+    .introLuciana h1 strong{
+        font-size: 6.5rem;
+        max-width: 90vw;
+    }
+
+    .introLuciana h1 b {
+        font-size: 3.3rem;
+    }
+
+    .introLuciana h1 span {
+        font-size: 2.75rem;
+    }
+
     .introLuciana .noPoder {
         font-size: 3.4rem;
+    }
+
+    .introNando h1, .introBancada h1, .introLuciana h1 {
+        margin-top: 20%;
     }
 
     .whatsapp {
@@ -136,9 +122,64 @@
       }
 
     .introNando h1, .introBancada h1, .introLuciana h1 {
-        margin-top: 11%;
+        margin-top: 15%;
+    }
+
+    .introNando h1 strong {
+        font-size: 10rem;
+    }
+
+    .introNando h1 b {
+        font-size: 5rem;
+    }
+
+    .introNando h1 span {
+        font-size: 2.8rem;
+    }
+
+    .introBancada h1 b {
+        font-size: 1.9rem;
+    }
+
+    .introBancada h1 strong{
+        font-size: 7rem;
+        max-width: 90vw;
+    }
+
+    .introBancada h1 span {
+        font-size: 2.6rem;
+    }
+
+    .introBancada .noPoder {
+        font-size: 3.25rem;
+    }
+
+    .introLuciana h1 strong{
+        font-size: 6rem;
+        max-width: 90vw;
+    }
+
+    .introLuciana h1 b {
+        font-size: 3rem;
+    }
+
+    .introLuciana h1 span {
+        font-size: 2.5rem;
+    }
+
+    .introLuciana .noPoder {
+        font-size: 3.15rem;
+    }
+
+    .introBancada, .introLuciana, .introNando {
+        gap: 0px;
     }
 
 
+
+
+}
+
+@media (max-width: 1024px) {
 
 }

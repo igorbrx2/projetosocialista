@@ -98,13 +98,14 @@ Version: 1.0
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 81vh;
+  height: 100vh;
+  gap: 30px;
 }
 
 .introNando img {
-  width: 755px;
+  width: 800px;
   max-width: 90vw;
-  margin-top: 5%;
+  height: auto;
 }
 
 .introNando h1 {
@@ -124,13 +125,13 @@ Version: 1.0
 .introNando h1 b {
   color: white;
   font-weight: 900;
-  font-size: 7rem;
+  font-size: 7.5rem;
 }
 
 .introNando h1 span {
   color: white;
   font-weight: 900;
-  font-size: 3.9rem;
+  font-size: 4.2rem;
 }
 
 /* bancada */
@@ -143,12 +144,13 @@ Version: 1.0
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 81vh;
+  height: 100vh;
 }
 
 .introBancada img {
-  width: 630px;
+  width: 700px;
   max-width: 90vw;
+  height: auto;
   margin-top: 5%;
 }
 
@@ -194,13 +196,13 @@ Version: 1.0
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 81vh;
+  height: 100vh;
+  gap: 30px;
 }
 
 .introLuciana img {
-  width: 563px;
+  width: 600px;
   max-width: 90vw;
-  margin-top: 5%;
 }
 
 .introLuciana h1 {
