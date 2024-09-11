@@ -174,7 +174,8 @@ const compromissos = {
 	"2024-08-22": ["Faz panfletagem junto aos trabalhadores da saúde de Natal e acompanha assembleia da categoria no Sindicato dos Bancários (Nando Poeta) - 08:30", "Participa do Dia do Folclore na Casa de Câmara Cascudo (Nando Poeta) - 10:00", "Presta apoio aos auxiliares de enfermagem de Natal, que pedem aprovação de projeto de lei da categoria na Câmara Municipal (Nando Poeta) - 12:30", "Participa de evento do IPHAN - Reconhecendo valores patrimoniais no Centro Histórico de Natal (Nando Poeta) - 13:30", "Participa de ato público em alusão ao Agosto Lilás de combate à violência contra as mulheres, na Praça Gentil Ferreira (Nando Poeta) - 15:00",
     ],
 	"2024-08-23": ["Recebe propostas da Arquidiocese de Natal no Centro Pastoral Pio X, na Catedral Metropolitana. (Nando Poeta) - 08:00", "Faz visita ao Museu Câmara Cascudo, que recebe coleção inédita de folhetos de cordel. (Nando Poeta) - 10:00", "Participa de evento cultural na Estação do Cordel, na Cidade Alta. (Nando Poeta) - 19:00"],
-	"2024-08-28": ["Nando Poeta grava vídeos para campanha - 10h", "Nando Poeta se reúne com apoiadores na sede do PSTU - 16h", "Panfletagem junto a trabalhadores bancários Av. Deodoro da Fonseca, em Petrópolis - 19h"],
+	"2024-08-28": ["Nando Poeta grava vídeos para campanha - 10h", "Nando Poeta se reúne com apoiadores na sede do PSTU - 16h", "Panfletagem junto a trabalhadores bancários Av. Deodoro da Fonseca, em Petrópolis - 19h"],
+    "2024-09-11": ["Panfletagem junto a trabalhadores da saúde e acompanha assembleia da categoria - 9h", "Panfletagem junto a professores e acompanha assembleia da categoria - 14h", "Panfletagem nas proximidades da passarela do Via Direta. - 17h"],
     // Adicione mais compromissos conforme necessário
 };
 
