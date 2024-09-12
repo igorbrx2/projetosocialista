@@ -29,6 +29,9 @@ html {
 }
 
 body {
+
+	padding-top: 50px;
+
 	line-height: 1;
 
 	::-webkit-scrollbar {

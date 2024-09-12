@@ -13,6 +13,7 @@ Version: 1.0
   display: flex;
   width: 100%;
   position: fixed;
+  top: 0;
   justify-content: space-around;
   align-items: center;
   height: 50px;
@@ -695,3 +696,83 @@ Version: 1.0
   align-items: center;
   gap: 10px;
 }
+
+/* PAGINA CANDIDATOS */
+
+#nandoPage, #jairanPage, #alexandrePage, #lucianaPage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+  padding: 3% 0;
+}
+
+#tiagoPage,
+#ericaPage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+  background: #e1e1e1;
+  padding: 3% 0;
+}
+
+#nandoPage img, 
+#tiagoPage img, 
+#alexandrePage img,
+#ericaPage img,
+#jairanPage img,
+#lucianaPage img {
+  width: 330px;
+  max-width: 90vw;
+}
+
+#nandoPage .textoCandidato, 
+#tiagoPage .textoCandidato, 
+#alexandrePage .textoCandidato, 
+#ericaPage .textoCandidato,
+#jairanPage .textoCandidato,
+#lucianaPage .textoCandidato{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 500px;
+  max-width: 90vw;
+}
+
+#nandoPage .textoCandidato h1, 
+#tiagoPage .textoCandidato h1, 
+#alexandrePage .textoCandidato h1,
+#ericaPage .textoCandidato h1,
+#jairanPage .textoCandidato h1,
+#lucianaPage .textoCandidato h1 {
+  font-weight: 900;
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+#nandoPage .textoCandidato p, 
+#tiagoPage .textoCandidato p, 
+#alexandrePage .textoCandidato p,
+#ericaPage .textoCandidato p,
+#jairanPage .textoCandidato p,
+#lucianaPage .textoCandidato p {
+  line-height: 1.1;
+}
+
+#nandoPage .textoCandidato span, 
+#tiagoPage .textoCandidato span,
+#alexandrePage .textoCandidato span,
+#ericaPage .textoCandidato span,
+#jairanPage .textoCandidato span,
+#lucianaPage .textoCandidato span {
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--vermelho-fonte);
+  text-align: start;
+  margin-top: 15px;
+}
+
