@@ -29,12 +29,13 @@
 
   <!-- MENU -->
   <header id="cabecalho">
-    <div class="logo"><a href="./"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logo-pstu.png" alt=""></a></div>
+    <div class="logo"><a href="/home/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logo-pstu.png" alt=""></a></div>
     <nav>
       <ul id="nav-list" class="londrina-font">
-        <li><a class="menuLink" href="#manifesto">manifesto</a></li>
-        <li><a class="menuLink" href="#conhecaCandidaturas">candidatos</a></li>
+      <li><a class="menuLink" href="https://wa.me/5584991334508" target="_blank">contato</a></li>
+        <li><a class="menuLink" href="/nandoetiago/">candidatos</a></li>
         <li><a class="menuLink" href="#cartilha">propostas</a></li>
+        <li><a class="menuLink" href="/manifesto/">manifesto</a></li>
         <li><a class="menuLink" href="#agenda">agenda</a></li>
       </ul>
 

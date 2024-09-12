@@ -13,7 +13,7 @@ Version: 1.0
   display: flex;
   width: 100%;
   position: fixed;
-  top: 0;
+  /* top: 0; */
   justify-content: space-around;
   align-items: center;
   height: 50px;
@@ -259,12 +259,6 @@ Version: 1.0
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 50px;
-}
-
-#corpo-manifesto h1 {
-  font-size: 7rem;
-  color: var(--vermelho-fonte);
 }
 
 #corpo-manifesto h2 {
@@ -274,13 +268,12 @@ Version: 1.0
   text-align: center;
   color: black;
   padding-bottom: 30px;
+  padding-top: 5%;
 }
 
 #corpo-manifesto p {
   width: 95vw;
   max-width: 900px;
-  max-height: 450px;
-  overflow-y: scroll;
   margin-bottom: 10px;
   line-height: 1.2;
   font-size: 1.1rem;
@@ -659,6 +652,7 @@ Version: 1.0
 }
 
 /* CARTILHA */
+
 #cartilha {
   background: var(--azul-manifesto);
   display: flex;
@@ -705,7 +699,7 @@ Version: 1.0
   justify-content: center;
   align-items: start;
   gap: 10px;
-  padding: 3% 0;
+  padding: 5% 0;
 }
 
 #tiagoPage,
@@ -716,7 +710,7 @@ Version: 1.0
   align-items: start;
   gap: 10px;
   background: #e1e1e1;
-  padding: 3% 0;
+  padding: 5% 0;
 }
 
 #nandoPage img, 

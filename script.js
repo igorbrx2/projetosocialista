@@ -154,6 +154,7 @@ const compromissos = {
 	"2024-08-23": ["Recebe propostas da Arquidiocese de Natal no Centro Pastoral Pio X, na Catedral Metropolitana. (Nando Poeta) - 08:00", "Faz visita ao Museu Câmara Cascudo, que recebe coleção inédita de folhetos de cordel. (Nando Poeta) - 10:00", "Participa de evento cultural na Estação do Cordel, na Cidade Alta. (Nando Poeta) - 19:00"],
 	"2024-08-28": ["Nando Poeta grava vídeos para campanha - 10h", "Nando Poeta se reúne com apoiadores na sede do PSTU - 16h", "Panfletagem junto a trabalhadores bancários Av. Deodoro da Fonseca, em Petrópolis - 19h"],
     "2024-09-11": ["Panfletagem junto a trabalhadores da saúde e acompanha assembleia da categoria - 9h", "Panfletagem junto a professores e acompanha assembleia da categoria - 14h", "Panfletagem nas proximidades da passarela do Via Direta. - 17h"],
+    "2024-09-12": ["Panfletagem nas proximidades do IPERN - 7h30", "Gravação de vídeos para campanha - 10h", "Encontro online com instituto de pesquisas socioeconômicas - 19h30"],
     // Adicione mais compromissos conforme necessário
 };
 
@@ -256,51 +257,6 @@ document.querySelector('.next').addEventListener('click', () => {
 });
 
 renderCalendar();
-
-// MENU RESPONSIVO
-
-class MobileNavbar {
-    constructor(mobileMenu, navList, navLinks) {
-        this.mobileMenu = document.querySelector(mobileMenu);
-        this.navList = document.querySelector(navList);
-        this.navLinks = document.querySelectorAll(navLinks);
-        this.activeclass = "active";
-
-        this.handleClick = this.handleClick.bind(this);
-    }
-
-    animateLinks() {
-        this.navLinks.forEach((link) => {
-            link.style.animation
-                ? (link.style.animation = "")
-                : (link.style.animation = 'navLinkFade 0.5s ease forwards 0.3s');
-        });
-    }
-
-    handleClick() {
-        this.navList.classList.toggle(this.activeclass);
-        this.mobileMenu.classList.toggle(this.activeclass);
-        this.animateLinks();
-    }
-
-    addClickEvent() {
-        this.mobileMenu.addEventListener("click", this.handleClick);
-    }
-
-    init() {
-        if (this.mobileMenu) {
-            this.addClickEvent();
-        }
-        return this;
-    }
-}
-
-const mobileNavbar = new MobileNavbar(
-    ".mobile-menu",
-    "#nav-list",
-    "#nav-list li"
-);
-mobileNavbar.init();
 
 // ROLAGEM
 
