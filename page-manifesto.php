@@ -6,7 +6,6 @@
 
 <div id="manifesto">
     <article id="corpo-manifesto" class="container-1200">
-      <!-- <h1 class="cactus-font">MANIFESTO</h1> -->
       <h2 class="montserrat-font">DO CAOS À ESPERANÇA:<br> O caminho para uma Natal Socialista</h2>
       <p class="montserrat-font">Natal não é a mesma para todos. Nossa cidade não oferece o mínimo de infraestrutura nas periferias, como saneamento básico e espaços de lazer e cultura. O transporte público, que deveria ser um direito essencial, é controlado há décadas por uma máfia de empresários. Nas creches, as vagas são definidas por sorteio e nossos filhos não têm o direito de estudar.<br>
 

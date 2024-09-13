@@ -82,7 +82,7 @@ get_template_part('propostas');
   </div>
   <div class="agenda">
     <div class="prox-eventos"><span class="montserrat-font">PRÓXIMOS EVENTOS</span></div>
-    <div class="events"></div>
+    <div class="events montserrat-font" style="line-height: 1.1;"></div>
   </div>
 </div>
 
