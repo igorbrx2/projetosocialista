@@ -8,7 +8,7 @@
   <meta http-equiv="pragma" content="no-cache" />
   <meta http-equiv="expires" content="0" />
 
-  <title>Projeto Socialista</title>
+  <title>Projeto Socialista - Nando Poeta, Tiago Silva, Bancada Socialista e Luciana Lima</title>
   <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/global.css" />
   <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" />
   <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/responsivo.css" />
