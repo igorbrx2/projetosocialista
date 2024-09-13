@@ -155,6 +155,7 @@ const compromissos = {
 	"2024-08-28": ["Nando Poeta grava vídeos para campanha - 10h", "Nando Poeta se reúne com apoiadores na sede do PSTU - 16h", "Panfletagem junto a trabalhadores bancários Av. Deodoro da Fonseca, em Petrópolis - 19h"],
     "2024-09-11": ["Panfletagem junto a trabalhadores da saúde e acompanha assembleia da categoria - 9h", "Panfletagem junto a professores e acompanha assembleia da categoria - 14h", "Panfletagem nas proximidades da passarela do Via Direta. - 17h"],
     "2024-09-12": ["Panfletagem nas proximidades do IPERN - 7h30", "Gravação de vídeos para campanha - 10h", "Encontro online com instituto de pesquisas socioeconômicas - 19h30"],
+    "2024-09-13": ["Panfletagem nas proximidades da Feira do Parque dos Coqueiros - 7h", "Roda de conversa sobre o combate à violência contra as mulheres, na sede do PSTU - 18h", "Acompanha o evento Slam Rima Central, na Cidade Alta - 19h30"],
     // Adicione mais compromissos conforme necessário
 };
 
