@@ -51,8 +51,6 @@
   });
 
 </script>
-<!-- script.js -->
-<script src="<?php echo get_stylesheet_directory_uri(); ?>/script.js"></script>
 <!-- script para intro -->
 <script>document.addEventListener("DOMContentLoaded", function () {
     let currentSlide = 0;
@@ -144,6 +142,35 @@
     "#nav-list li"
   );
   mobileNavbar.init();</script>
+<!-- script para copiar pix -->
+ <script>document.getElementById('copyLink').addEventListener('click', function(event) {
+    event.preventDefault(); 
+    
+    const textToCopy = '56.256.408/0001-83';
+  
+    // Verifica se a API Clipboard está disponível
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(textToCopy).then(function() {
+            console.log('Texto copiado com sucesso!');
+            document.getElementById('successMessage').style.display = 'block';
+            document.getElementById('overlay').style.display = 'block';
+        }).catch(function(error) {
+            console.error('Erro ao copiar o texto: ', error);
+        });
+    } else {
+        console.error('A API Clipboard não é suportada neste navegador.');
+        alert('Seu navegador não suporta a funcionalidade de copiar para a área de transferência.');
+    }
+  });
+  
+  document.addEventListener('click', function(event) {
+    if (event.target.id !== 'copyLink' && event.target.id !== 'successMessage') {
+        document.getElementById('successMessage').style.display = 'none';
+        document.getElementById('overlay').style.display = 'none';
+    }
+  });</script>
+<!-- script.js -->
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/script.js"></script>
 
 <?php wp_footer(); ?>
 

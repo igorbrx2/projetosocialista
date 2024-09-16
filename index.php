@@ -27,7 +27,6 @@
   <span class="dot" onclick="currentSlide(2)"></span>
 </div>
 
-
 <div class="whatsapp">
   <a href="https://wa.me/5584991334508" target="_blank"><img
       src="<?php echo get_stylesheet_directory_uri(); ?>/assets/botaoZap.png" alt="fale com a gente"></a>
@@ -41,7 +40,7 @@ get_template_part('candidaturas');
 ?>
 
 <!-- CONTRIBUIÇÃO FINANCEIRA -->
-<!-- <section id="contribuicao">
+<section id="contribuicao">
     <div class="contribuicao montserrat-font">
       <h2>CONTRIBUIÇÃO FINANCEIRA</h2>
       <p>Copie o Pix ou Scaneie o QR Code</p>
@@ -49,16 +48,23 @@ get_template_part('candidaturas');
     <div class="QRCode">
       <div class="divCopiar">
       <a href="#" id="copyLink"><img class="copiar" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/btnCopiar.png" alt=""></a>
-      <p class="montserrat-font">Pix: <b>56.256.408/0001-83</b></p>
+      <p class="montserrat-font">Pix: <b>56.404.907/0001-70</b></p>
       </div>
-      <img class="QR" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/qrCodeContribuicao.png" alt="">
+      <img class="QR" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/qrCodeContribuicao.jpg" alt="">
     </div>
-  </section> -->
+  </section>
 
 <!-- CARTILHA -->
-<?php
-get_template_part('propostas');
-?>
+<section id="cartilha" style="background-color:white;">
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/cartilhas.png" alt="">
+    <div class="propostas">
+      <h1 class="montserrat-font" style="color: #434343;">ACESSE NOSSAS<br>PROPOSTAS</h1>
+      <div class="btnPropostas">
+        <a href="<?php echo get_stylesheet_directory_uri(); ?>/assets/projetoSocialistaNatal.pdf" download><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/btnBaixar.png" alt=""></a>
+        <a href="<?php echo get_stylesheet_directory_uri(); ?>/assets/projetoSocialistaNatal.pdf" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/btnLer.png" alt=""></a>
+      </div>
+    </div>
+  </section>
 
 <!-- AGENDA -->
 <div class="container" id="agenda">
