@@ -58,26 +58,48 @@
     let currentSlide = 0;
     const slides = document.querySelectorAll('#introSlide .slide');
     const totalSlides = slides.length;
+    const dots = document.querySelectorAll('#slideControls .dot');
+    let slideInterval;
 
     function showSlide(index) {
-      slides.forEach(slide => {
-        slide.classList.remove('active');
-        slide.style.display = 'none';
-      });
+        slides.forEach((slide, i) => {
+            slide.classList.remove('active');
+            slide.style.display = 'none';
+            dots[i].classList.remove('active'); // Remove a classe de dot ativo
+        });
 
-      slides[index].classList.add('active');
-      slides[index].style.display = 'flex';
+        slides[index].classList.add('active');
+        slides[index].style.display = 'flex';
+        dots[index].classList.add('active'); // Adiciona a classe de dot ativo
     }
 
     function nextSlide() {
-      currentSlide = (currentSlide + 1) % totalSlides;
-      showSlide(currentSlide);
+        currentSlide = (currentSlide + 1) % totalSlides;
+        showSlide(currentSlide);
     }
 
-    showSlide(currentSlide);
+    function startSlideInterval() {
+        slideInterval = setInterval(nextSlide, 3000);
+    }
 
-    setInterval(nextSlide, 3000);
-  });
+    function stopSlideInterval() {
+        clearInterval(slideInterval);
+    }
+
+    // Mostra o slide inicial
+    showSlide(currentSlide);
+    startSlideInterval();
+
+    // Adiciona eventos de clique nas dots
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            stopSlideInterval(); // Para o intervalo ao clicar em uma dot
+            currentSlide = index;
+            showSlide(currentSlide);
+            startSlideInterval(); // Reinicia o intervalo após um clique
+        });
+    });
+});
 </script>
 <!-- script para menu mobile -->
 <script>class MobileNavbar {

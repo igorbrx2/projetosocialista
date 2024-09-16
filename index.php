@@ -12,18 +12,21 @@
   </div>
 
   <div class="introBancada montserrat-font slide">
-    <h1><strong>16123</strong><br><b>TRABALHADORES</b><br><span>SOCIALISTAS</span><br><span class="noPoder">NO
-        PODER</span></h1>
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/bancadaSocialista.png"
-      alt="Bancada Socialista: Érica Guarani, Alexandre Guedes e José Jairan">
+    <h1><strong>16123</strong><br><b>TRABALHADORES</b><br><span>SOCIALISTAS</span><br><span class="noPoder">NO PODER</span></h1>
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/bancadaSocialista.png" alt="Bancada Socialista: Érica Guarani, Alexandre Guedes e José Jairan">
   </div>
 
   <div class="introLuciana montserrat-font slide">
-    <h1><strong>16789</strong><br><b>MULHERES</b><br><span>SOCIALISTAS</span><br><span class="noPoder">NO PODER</span>
-    </h1>
+    <h1><strong>16789</strong><br><b>MULHERES</b><br><span>SOCIALISTAS</span><br><span class="noPoder">NO PODER</span></h1>
     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/lucianaIntro.png" alt="Luciana Lima">
   </div>
 </div>
+<div id="slideControls">
+  <span class="dot" onclick="currentSlide(0)"></span>
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+</div>
+
 
 <div class="whatsapp">
   <a href="https://wa.me/5584991334508" target="_blank"><img

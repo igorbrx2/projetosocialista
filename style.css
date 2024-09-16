@@ -88,6 +88,36 @@ Version: 1.0
   display: flex;
 }
 
+/* Estilo geral para os dots */
+#slideControls {
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  z-index: 10;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: black; /* Cor do dot ativo */
+}
+
+/* Estilo para dots inativos */
+.dot:not(.active) {
+  background-color: white; /* Cor dos dots inativos */
+}
+
+
 /* IMAGEM DE INTRODUÇÃO */
  /* nando */
 .introNando {
