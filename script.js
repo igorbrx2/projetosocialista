@@ -1,5 +1,132 @@
 console.log("Script carregado corretamente");
 
+// MODAIS DE APRESENTAÇÃO
+
+    // conteúdo dinâmico dos candidatos
+    const candidatos = {
+        'nando': `
+        <p class="montserrat-font" style="line-height: 1.3; font-size: 1.2rem">
+        <br><strong>Pontos do Programa:</strong><br>
+    
+        <br>-	Combater a privatização dos equipamentos culturais;<br>
+        <br>-	Destinar mais recursos para políticas públicas de cultura;<br>
+        <br>-	Dobrar o orçamento para a cultura;<br>
+        <br>-	Fomentar o acesso da população aos equipamentos culturais públicos;<br>
+        <br>-	Cobrar os grande devedores do município e reverter esse dinheiro para os serviços públicos;<br>
+        <br>-	Universalizar a educação básica;<br>
+        <br>-	SUS 100% público;<br>
+        <br>-	Estatização dos serviços de saúde;<br>
+        <br>-	Fim da privatização e terceirização na saúde;<br>
+        <br>-	Suspensão do pagamento da dívida pública e auditoria das contas do município;<br>
+        <br>-	Criação de empresa municipal de transporte;<br>
+        </p>`,
+    
+        'tiago': `
+        <p class="montserrat-font" style="line-height: 1.3; font-size: 1.2rem">
+        <br><strong>Pontos do Programa:</strong><br>
+    
+        <br>- Combater a LGBTIfobia e transfobia;<br>
+        <br>- Combater a privatização dos equipamentos culturais;<br>
+        <br>- Destinar mais recursos para políticas públicas de cultura;<br>
+        <br>- Dobrar o orçamento para a cultura;<br>
+        <br> Fomentar o acesso da população aos equipamentos culturais públicos;<br>
+        <br>- Cobrar os grandes devedores do município e reverter esse dinheiro para os serviços públicos;<br>
+        <br>- Universalizar a educação básica;<br>
+        <br>- Passe livre para estudantes e desempregados;<br>
+        <br>- Desmilitarização da PM;<br>
+        <br>- Combater o genocídio da juventude das periferias.<br>
+        </p>`,
+    
+        'alexandre': `
+        <p class="montserrat-font" style="line-height: 1.3; font-size: 1.2rem">
+        <br><strong>Pontos do Programa:</strong><br>
+    
+        <br>-	Cobrar os grandes devedores do município;<br>
+        <br>-	Suspensão do pagamento da dívida pública e auditoria das contas do município;<br>
+        <br>-	Criação de empresa municipal de transporte;<br>
+        <br>-	Redução da jornada de trabalho sem redução do salário;<br>
+        <br>-	Plano de obras públicas para empregar todos os desempregados;<br>
+        <br>-	Universalização do saneamento básico.<br>
+        <br>-	Passe livre para estudantes e desempregados;<br>
+        <br>-	Contra o desmonte da Urbana;<br>
+        <br>-	Combater a especulação imobiliária;<br>
+        <br>-	Defender a mata atlântica e os manguezais;<br>
+        </p>`,
+    
+        'erica': `
+        <p class="montserrat-font" style="line-height: 1.3; font-size: 1.2rem">
+        <br><strong>Pontos do Programa:</strong><br>
+    
+        <br>-	Combater o machismo e o racismo;<br>
+        <br>-	Ampliar a Lei Maria da Penha;<br>
+        <br>-	Defender os povos indígenas;<br>
+        <br>-	SUS 100% público;<br>
+        <br>-	Estatização dos serviços de saúde;<br>
+        <br>-	Fim da privatização e terceirização na saúde;<br>
+        <br>-	Estruturação das Unidades Básicas de Saúde;<br>
+        </p>`,
+    
+        'jairan': `
+        <p class="montserrat-font" style="line-height: 1.3; font-size: 1.2rem">
+        <br><strong>Pontos do Programa:</strong><br>
+    
+        <br>-	Combater o racismo, a LGBTIfobia e a transfobia;<br>
+        <br>-	Defender os povos indígenas;<br>
+        <br>-	Combater o racismo religioso;<br>
+        <br>-	Igualar o salário dos políticos para o de uma professora municipal;<br>
+        <br>-	Ampliação da estrutura física das escolas;<br>
+        <br>-	Universalizar a educação básica;<br>
+        <br>-	5% do PIB de Natal para a educação.<br>
+        <br>-	Defender o piso do magistério.<br>
+        <br>-	Concurso público para a educação.<br>
+        <br>-	Defender acessibilidade e inclusão nas escolas e nos demais espaços públicos.<br>
+        </p>`,
+    
+        'luciana': `
+        <p class="montserrat-font" style="line-height: 1.3; font-size: 1.2rem">
+        <br><strong>Pontos do Programa:</strong><br>
+    
+        <br>-	Combater o machismo;<br>
+        <br>-	Ampliar a Lei Maria da Penha;<br>
+        <br>-	Igualar o salário dos políticos para o de uma professora municipal;<br>
+        <br>-	Ampliação da estrutura física das escolas;<br>
+        <br>-	Universalizar a educação básica;<br>
+        <br>-	5% do PIB de Natal para a educação.<br>
+        <br>-	Defender o piso do magistério.<br>
+        <br>-	Concurso público para a educação.<br>
+        <br>-	Defender acessibilidade e inclusão nas escolas e nos demais espaços públicos.<br>
+        </p>`,
+    
+    
+        };
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            const modalContainer = document.querySelector('.modalNando-container');
+            const modalConteudo = document.getElementById('modalConteudo');
+            const botaoFechar = document.getElementById('fecharModal');
+            
+            document.querySelectorAll('.candidato').forEach(candidato => {
+                candidato.addEventListener('click', (event) => {
+                  event.preventDefault();
+                  const idCandidato = candidato.getAttribute('data-candidato');
+                  if (candidatos[idCandidato]) {
+                    modalConteudo.innerHTML = candidatos[idCandidato];
+                    modalContainer.style.display = 'flex';
+                  }
+                });
+              });
+    
+              botaoFechar.addEventListener('click', () => {
+                modalContainer.style.display = 'none';
+              });
+            
+              modalContainer.addEventListener('click', (event) => {
+                if (event.target === modalContainer) {
+                  modalContainer.style.display = 'none';
+                }
+              });
+            });
+
 const date = new Date();
 // Definindo os compromissos diretamente no código
 const compromissos = {
@@ -119,133 +246,6 @@ document.querySelector('.next').addEventListener('click', () => {
 });
 
 renderCalendar();
-
-// MODAIS DE APRESENTAÇÃO
-
-    // conteúdo dinâmico dos candidatos
-    const candidatos = {
-    'nando': `
-    <p class="montserrat-font" style="line-height: 1.3; font-size: 1.2rem">
-    <br><strong>Pontos do Programa:</strong><br>
-
-    <br>-	Combater a privatização dos equipamentos culturais;<br>
-    <br>-	Destinar mais recursos para políticas públicas de cultura;<br>
-    <br>-	Dobrar o orçamento para a cultura;<br>
-    <br>-	Fomentar o acesso da população aos equipamentos culturais públicos;<br>
-    <br>-	Cobrar os grande devedores do município e reverter esse dinheiro para os serviços públicos;<br>
-    <br>-	Universalizar a educação básica;<br>
-    <br>-	SUS 100% público;<br>
-    <br>-	Estatização dos serviços de saúde;<br>
-    <br>-	Fim da privatização e terceirização na saúde;<br>
-    <br>-	Suspensão do pagamento da dívida pública e auditoria das contas do município;<br>
-    <br>-	Criação de empresa municipal de transporte;<br>
-    </p>`,
-
-    'tiago': `
-    <p class="montserrat-font" style="line-height: 1.3; font-size: 1.2rem">
-    <br><strong>Pontos do Programa:</strong><br>
-
-    <br>- Combater a LGBTIfobia e transfobia;<br>
-    <br>- Combater a privatização dos equipamentos culturais;<br>
-    <br>- Destinar mais recursos para políticas públicas de cultura;<br>
-    <br>- Dobrar o orçamento para a cultura;<br>
-    <br> Fomentar o acesso da população aos equipamentos culturais públicos;<br>
-    <br>- Cobrar os grandes devedores do município e reverter esse dinheiro para os serviços públicos;<br>
-    <br>- Universalizar a educação básica;<br>
-    <br>- Passe livre para estudantes e desempregados;<br>
-    <br>- Desmilitarização da PM;<br>
-    <br>- Combater o genocídio da juventude das periferias.<br>
-    </p>`,
-
-    'alexandre': `
-    <p class="montserrat-font" style="line-height: 1.3; font-size: 1.2rem">
-    <br><strong>Pontos do Programa:</strong><br>
-
-    <br>-	Cobrar os grandes devedores do município;<br>
-    <br>-	Suspensão do pagamento da dívida pública e auditoria das contas do município;<br>
-    <br>-	Criação de empresa municipal de transporte;<br>
-    <br>-	Redução da jornada de trabalho sem redução do salário;<br>
-    <br>-	Plano de obras públicas para empregar todos os desempregados;<br>
-    <br>-	Universalização do saneamento básico.<br>
-    <br>-	Passe livre para estudantes e desempregados;<br>
-    <br>-	Contra o desmonte da Urbana;<br>
-    <br>-	Combater a especulação imobiliária;<br>
-    <br>-	Defender a mata atlântica e os manguezais;<br>
-    </p>`,
-
-    'erica': `
-    <p class="montserrat-font" style="line-height: 1.3; font-size: 1.2rem">
-    <br><strong>Pontos do Programa:</strong><br>
-
-    <br>-	Combater o machismo e o racismo;<br>
-    <br>-	Ampliar a Lei Maria da Penha;<br>
-    <br>-	Defender os povos indígenas;<br>
-    <br>-	SUS 100% público;<br>
-    <br>-	Estatização dos serviços de saúde;<br>
-    <br>-	Fim da privatização e terceirização na saúde;<br>
-    <br>-	Estruturação das Unidades Básicas de Saúde;<br>
-    </p>`,
-
-    'jairan': `
-    <p class="montserrat-font" style="line-height: 1.3; font-size: 1.2rem">
-    <br><strong>Pontos do Programa:</strong><br>
-
-    <br>-	Combater o racismo, a LGBTIfobia e a transfobia;<br>
-    <br>-	Defender os povos indígenas;<br>
-    <br>-	Combater o racismo religioso;<br>
-    <br>-	Igualar o salário dos políticos para o de uma professora municipal;<br>
-    <br>-	Ampliação da estrutura física das escolas;<br>
-    <br>-	Universalizar a educação básica;<br>
-    <br>-	5% do PIB de Natal para a educação.<br>
-    <br>-	Defender o piso do magistério.<br>
-    <br>-	Concurso público para a educação.<br>
-    <br>-	Defender acessibilidade e inclusão nas escolas e nos demais espaços públicos.<br>
-    </p>`,
-
-    'luciana': `
-    <p class="montserrat-font" style="line-height: 1.3; font-size: 1.2rem">
-    <br><strong>Pontos do Programa:</strong><br>
-
-    <br>-	Combater o machismo;<br>
-    <br>-	Ampliar a Lei Maria da Penha;<br>
-    <br>-	Igualar o salário dos políticos para o de uma professora municipal;<br>
-    <br>-	Ampliação da estrutura física das escolas;<br>
-    <br>-	Universalizar a educação básica;<br>
-    <br>-	5% do PIB de Natal para a educação.<br>
-    <br>-	Defender o piso do magistério.<br>
-    <br>-	Concurso público para a educação.<br>
-    <br>-	Defender acessibilidade e inclusão nas escolas e nos demais espaços públicos.<br>
-    </p>`,
-
-
-    };
-    
-    document.addEventListener('DOMContentLoaded', () => {
-        const modalContainer = document.querySelector('.modalNando-container');
-        const modalConteudo = document.getElementById('modalConteudo');
-        const botaoFechar = document.getElementById('fecharModal');
-        
-        document.querySelectorAll('.candidato').forEach(candidato => {
-            candidato.addEventListener('click', (event) => {
-              event.preventDefault();
-              const idCandidato = candidato.getAttribute('data-candidato');
-              if (candidatos[idCandidato]) {
-                modalConteudo.innerHTML = candidatos[idCandidato];
-                modalContainer.style.display = 'flex';
-              }
-            });
-          });
-
-          botaoFechar.addEventListener('click', () => {
-            modalContainer.style.display = 'none';
-          });
-        
-          modalContainer.addEventListener('click', (event) => {
-            if (event.target === modalContainer) {
-              modalContainer.style.display = 'none';
-            }
-          });
-        });
 
 // QUEM ASSINOU OCULTAR EXIBIR
 

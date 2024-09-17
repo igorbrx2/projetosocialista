@@ -4,6 +4,8 @@
 </footer>
 <!-- script para jquery -->
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/jquery.js"></script>
+<!-- script.js -->
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/script.js"></script>
 <!-- script para form -->
 <script>
   function validateForm() {
@@ -28,11 +30,9 @@
     }
     return true;
   }
-  /***
-   * 
+  /*
    *  Esse script é responsavel por fazer o fetch do JSON
-   *  e popular o local com os nomes 
-   * 
+   *  e popular o local com os nomes
    */
   document.addEventListener('DOMContentLoaded', function () {
     fetch('<?php echo get_stylesheet_directory_uri(); ?>/subscribes.json')
@@ -63,12 +63,12 @@
         slides.forEach((slide, i) => {
             slide.classList.remove('active');
             slide.style.display = 'none';
-            dots[i].classList.remove('active'); // Remove a classe de dot ativo
+            dots[i].classList.remove('active');
         });
 
         slides[index].classList.add('active');
         slides[index].style.display = 'flex';
-        dots[index].classList.add('active'); // Adiciona a classe de dot ativo
+        dots[index].classList.add('active');
     }
 
     function nextSlide() {
@@ -84,11 +84,9 @@
         clearInterval(slideInterval);
     }
 
-    // Mostra o slide inicial
     showSlide(currentSlide);
     startSlideInterval();
 
-    // Adiciona eventos de clique nas dots
     dots.forEach((dot, index) => {
         dot.addEventListener('click', () => {
             stopSlideInterval(); // Para o intervalo ao clicar em uma dot
@@ -169,8 +167,6 @@
         document.getElementById('overlay').style.display = 'none';
     }
   });</script>
-<!-- script.js -->
-<script src="<?php echo get_stylesheet_directory_uri(); ?>/script.js"></script>
 
 <?php wp_footer(); ?>
 

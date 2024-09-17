@@ -77,5 +77,4 @@ get_template_part('candidaturas');
     </div>
   </section>
 
-
 <?php get_footer(); ?>

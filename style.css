@@ -725,7 +725,6 @@ Version: 1.0
 }
 
 /* PAGINA CANDIDATOS */
-
 #nandoPage, #jairanPage, #alexandrePage, #lucianaPage {
   display: flex;
   flex-wrap: wrap;

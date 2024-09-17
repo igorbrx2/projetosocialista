@@ -6,20 +6,27 @@
 
 <!-- INTRODUÇÃO -->
 <div id="introSlide">
+  <a href="/nandoetiago">
   <div class="introNando montserrat-font slide">
     <h1><strong>16</strong><br><b>NATAL</b><br><span>SOCIALISTA</span></h1>
     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/nandoTiago.png" alt="Nando Poeta e Tiago Silva">
   </div>
+  </a>
 
+  <a href="/bancada">
   <div class="introBancada montserrat-font slide">
     <h1><strong>16123</strong><br><b>TRABALHADORES</b><br><span>SOCIALISTAS</span><br><span class="noPoder">NO PODER</span></h1>
     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/bancadaSocialista.png" alt="Bancada Socialista: Érica Guarani, Alexandre Guedes e José Jairan">
   </div>
+  </a>
 
+  <a href="/luciana">
   <div class="introLuciana montserrat-font slide">
     <h1><strong>16789</strong><br><b>MULHERES</b><br><span>SOCIALISTAS</span><br><span class="noPoder">NO PODER</span></h1>
     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/lucianaIntro.png" alt="Luciana Lima">
   </div>
+  </a>
+
 </div>
 <div id="slideControls">
   <span class="dot" onclick="currentSlide(0)"></span>
