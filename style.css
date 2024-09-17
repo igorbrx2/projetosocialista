@@ -121,7 +121,7 @@ Version: 1.0
 /* IMAGEM DE INTRODUÇÃO */
  /* nando */
 .introNando {
-  background: url(./assets/bg1.png);
+  background: url(./assets/bg1.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -167,7 +167,7 @@ Version: 1.0
 
 /* bancada */
 .introBancada {
-  background: url(./assets/bg2.png);
+  background: url(./assets/bg2.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -219,7 +219,7 @@ Version: 1.0
 
 /* luciana */
 .introLuciana {
-  background: url(./assets/bg3.png);
+  background: url(./assets/bg3.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
