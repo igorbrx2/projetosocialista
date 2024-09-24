@@ -145,6 +145,7 @@ const compromissos = {
     "2024-09-15": ["Reunião com apoiadores na Cidade Alta - 11h"],
     "2024-09-16": ["Panfletagem nas proximidades do Hospital dos Pescadores - 6h", "Panfletagem nas proximidades da Feira das Rocas - 7h", "Ato público dos profissionais da educação na Governadoria - 9h", "Reunião com equipe de coordenação de campanha - 17h"],
     "2024-09-18": ["PodCast Mesa de Debates(online) - 9h"],
+    "2024-09-24": ["Panfletagem no Parque das Dunas, nas proximidades da Escola Maria Alexandrina Sampaio e do CMEI Santa Cecília - 6h30", "Panfletagem nas proximidades da Escola Professora Vera Lúcia, também no Parque das Dunas - 10h30", "Panfletagem no Conjunto Pajuçara, próximo à Escola Maria Madalena - 16h:30"],
     // Adicione mais compromissos conforme necessário
 };
 
