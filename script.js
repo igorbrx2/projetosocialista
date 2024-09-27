@@ -13,12 +13,15 @@ const compromissos = {
 	"2024-08-28": ["Nando Poeta grava vídeos para campanha - 10h", "Nando Poeta se reúne com apoiadores na sede do PSTU - 16h", "Panfletagem junto a trabalhadores bancários Av. Deodoro da Fonseca, em Petrópolis - 19h"],
     "2024-09-11": ["Panfletagem junto a trabalhadores da saúde e acompanha assembleia da categoria - 9h", "Panfletagem junto a professores e acompanha assembleia da categoria - 14h", "Panfletagem nas proximidades da passarela do Via Direta. - 17h"],
     "2024-09-12": ["Panfletagem nas proximidades do IPERN - 7h30", "Gravação de vídeos para campanha - 10h", "Encontro online com instituto de pesquisas socioeconômicas - 19h30"],
-    "2024-09-13": ["Panfletagem nas proximidades da Feira do Parque dos Coqueiros - 7h", "Roda de conversa sobre o combate à violência contra as mulheres, na sede do PSTU - 18h", "Acompanha o evento Slam Rima Central, na Cidade Alta - 19h30"],
+    "2024-09-13": ["Panfletagem nas proximidades da Feira do Parque dos Coqueiros - 7h", "Roda de conversa sobre o combate à violência contra as mulheres, na sede do PSTU - 18h", "Acompanha o evento Slam Rima Central, na Cidade Alta - 19h30"],
     "2024-09-14": ["Panfletagem nas proximidades da UPA de Pajuçara - 6h30"],
     "2024-09-15": ["Reunião com apoiadores na Cidade Alta - 11h"],
-    "2024-09-16": ["Panfletagem nas proximidades do Hospital dos Pescadores - 6h", "Panfletagem nas proximidades da Feira das Rocas - 7h", "Ato público dos profissionais da educação na Governadoria - 9h", "Reunião com equipe de coordenação de campanha - 17h"],
+    "2024-09-16": ["Panfletagem nas proximidades do Hospital dos Pescadores - 6h", "Panfletagem nas proximidades da Feira das Rocas - 7h", "Ato público dos profissionais da educação na Governadoria - 9h", "Reunião com equipe de coordenação de campanha - 17h"],
     "2024-09-18": ["PodCast Mesa de Debates(online) - 9h"],
-    "2024-09-24": ["Panfletagem no Parque das Dunas, nas proximidades da Escola Maria Alexandrina Sampaio e do CMEI Santa Cecília - 6h30", "Panfletagem nas proximidades da Escola Professora Vera Lúcia, também no Parque das Dunas - 10h30", "Panfletagem no Conjunto Pajuçara, próximo à Escola Maria Madalena - 16h:30"],
+    "2024-09-24": ["Panfletagem no Parque das Dunas, nas proximidades da Escola Maria Alexandrina Sampaio e do CMEI Santa Cecília - 6h30", "Panfletagem nas proximidades da Escola Professora Vera Lúcia, também no Parque das Dunas - 10h30", "Panfletagem no Conjunto Pajuçara, próximo à Escola Maria Madalena - 16h:30"],
+    "2024-09-28": ["Acompanha evento sobre Cordel no Festival Literário de Natal (FLIN), na Praça Pedro Velho (Praça Cívica) - 10h30", "Participa de atividade cultural na Vila de Ponta Negra, no Ponto de Cultura Tapiocaria da Vó. - 17h"],
+    "2024-09-29": ["Participa de almoço com apoiadores de campanha no Gramorezinho, na Zona Norte de Natal - 12h"],
+    "2024-09-30": ["Panfletagem na Cidade da Esperança, nas proximidades do Detran/RN - 7h", "Gravação de vídeos para a campanha - 11h", "Reunião com coordenação de campanha na sede do PSTU - 17h"],
     // Adicione mais compromissos conforme necessário
 };
 
