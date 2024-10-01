@@ -165,4 +165,9 @@
         gap: 0px;
     }
 
+    #nandoPage, #jairanPage, #alexandrePage, #lucianaPage, #tiagoPage,
+    #ericaPage {
+        padding: 20% 0;
+    }
+
 }

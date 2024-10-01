@@ -6,27 +6,33 @@
 
 <!-- INTRODUÇÃO -->
 <div id="introSlide">
+  <a href="/nandoetiago">
   <div class="introNando montserrat-font slide">
     <h1><strong>16</strong><br><b>NATAL</b><br><span>SOCIALISTA</span></h1>
     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/nandoTiago.png" alt="Nando Poeta e Tiago Silva">
   </div>
+  </a>
 
+  <a href="/bancada">
   <div class="introBancada montserrat-font slide">
     <h1><strong>16123</strong><br><b>TRABALHADORES</b><br><span>SOCIALISTAS</span><br><span class="noPoder">NO PODER</span></h1>
     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/bancadaSocialista.png" alt="Bancada Socialista: Érica Guarani, Alexandre Guedes e José Jairan">
   </div>
+  </a>
 
+  <a href="/luciana">
   <div class="introLuciana montserrat-font slide">
     <h1><strong>16789</strong><br><b>MULHERES</b><br><span>SOCIALISTAS</span><br><span class="noPoder">NO PODER</span></h1>
     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/lucianaIntro.png" alt="Luciana Lima">
   </div>
+  </a>
+
 </div>
 <div id="slideControls">
   <span class="dot" onclick="currentSlide(0)"></span>
   <span class="dot" onclick="currentSlide(1)"></span>
   <span class="dot" onclick="currentSlide(2)"></span>
 </div>
-
 
 <div class="whatsapp">
   <a href="https://wa.me/5584991334508" target="_blank"><img
@@ -41,7 +47,7 @@ get_template_part('candidaturas');
 ?>
 
 <!-- CONTRIBUIÇÃO FINANCEIRA -->
-<!-- <section id="contribuicao">
+<section id="contribuicao">
     <div class="contribuicao montserrat-font">
       <h2>CONTRIBUIÇÃO FINANCEIRA</h2>
       <p>Copie o Pix ou Scaneie o QR Code</p>
@@ -49,16 +55,23 @@ get_template_part('candidaturas');
     <div class="QRCode">
       <div class="divCopiar">
       <a href="#" id="copyLink"><img class="copiar" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/btnCopiar.png" alt=""></a>
-      <p class="montserrat-font">Pix: <b>56.256.408/0001-83</b></p>
+      <p class="montserrat-font">Pix: <b>56.404.907/0001-70</b></p>
       </div>
-      <img class="QR" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/qrCodeContribuicao.png" alt="">
+      <img class="QR" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/qrCodeContribuicao.jpg" alt="">
     </div>
-  </section> -->
+  </section>
 
 <!-- CARTILHA -->
-<?php
-get_template_part('propostas');
-?>
+<section id="cartilha" style="background-color:white;">
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/cartilhas.png" alt="">
+    <div class="propostas">
+      <h1 class="montserrat-font" style="color: #434343;">ACESSE NOSSAS<br>PROPOSTAS</h1>
+      <div class="btnPropostas">
+        <a href="<?php echo get_stylesheet_directory_uri(); ?>/assets/projetoSocialistaNatal.pdf" download><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/btnBaixar.png" alt=""></a>
+        <a href="<?php echo get_stylesheet_directory_uri(); ?>/assets/projetoSocialistaNatal.pdf" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/btnLer.png" alt=""></a>
+      </div>
+    </div>
+  </section>
 
 <!-- AGENDA -->
 <div class="container" id="agenda">
