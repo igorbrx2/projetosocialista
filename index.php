@@ -9,21 +9,21 @@
   <a href="/nandoetiago">
   <div class="introNando montserrat-font slide">
     <h1><strong>16</strong><br><b>NATAL</b><br><span>SOCIALISTA</span></h1>
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/nandoTiago.png" alt="Nando Poeta e Tiago Silva">
+    <img src="<?php the_field('tiagoenando-intro'); ?>" alt="Nando Poeta e Tiago Silva">
   </div>
   </a>
 
   <a href="/bancada">
   <div class="introBancada montserrat-font slide">
     <h1><strong>16123</strong><br><b>TRABALHADORES</b><br><span>SOCIALISTAS</span><br><span class="noPoder">NO PODER</span></h1>
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/bancadaSocialista.png" alt="Bancada Socialista: Érica Guarani, Alexandre Guedes e José Jairan">
+    <img src="<?php the_field('bancada-intro'); ?>" alt="Bancada Socialista: Érica Guarani, Alexandre Guedes e José Jairan">
   </div>
   </a>
 
   <a href="/luciana">
   <div class="introLuciana montserrat-font slide">
     <h1><strong>16789</strong><br><b>MULHERES</b><br><span>SOCIALISTAS</span><br><span class="noPoder">NO PODER</span></h1>
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/lucianaIntro.png" alt="Luciana Lima">
+    <img src="<?php the_field('luciana-intro'); ?>" alt="Luciana Lima">
   </div>
   </a>
 
@@ -36,7 +36,7 @@
 
 <div class="whatsapp">
   <a href="https://wa.me/5584991334508" target="_blank"><img
-      src="<?php echo get_stylesheet_directory_uri(); ?>/assets/botaoZap.png" alt="fale com a gente"></a>
+      src="<?php the_field('botaozap'); ?>" alt="fale com a gente"></a>
 </div>
 
 <!-- FIM DA INTRO -->
@@ -54,21 +54,21 @@ get_template_part('candidaturas');
     </div>
     <div class="QRCode">
       <div class="divCopiar">
-      <a href="#" id="copyLink"><img class="copiar" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/btnCopiar.png" alt=""></a>
+      <a href="#" id="copyLink"><img class="copiar" src="<?php the_field('btncopiar'); ?>" alt=""></a>
       <p class="montserrat-font">Pix: <b>56.404.907/0001-70</b></p>
       </div>
-      <img class="QR" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/qrCodeContribuicao.jpg" alt="">
+      <img class="QR" src="<?php the_field('qrcodecontribuicao'); ?>" alt="">
     </div>
   </section>
 
 <!-- CARTILHA -->
 <section id="cartilha" style="background-color:white;">
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/cartilhas.png" alt="">
+    <img src="<?php the_field('cartilhas'); ?>" alt="">
     <div class="propostas">
       <h1 class="montserrat-font" style="color: #434343;">ACESSE NOSSAS<br>PROPOSTAS</h1>
       <div class="btnPropostas">
-        <a href="<?php echo get_stylesheet_directory_uri(); ?>/assets/projetoSocialistaNatal.pdf" download><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/btnBaixar.png" alt=""></a>
-        <a href="<?php echo get_stylesheet_directory_uri(); ?>/assets/projetoSocialistaNatal.pdf" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/btnLer.png" alt=""></a>
+        <a href="<?php echo get_stylesheet_directory_uri(); ?>/assets/projetoSocialistaNatal.pdf" download><img src="<?php the_field('btnbaixar'); ?>" alt=""></a>
+        <a href="<?php echo get_stylesheet_directory_uri(); ?>/assets/projetoSocialistaNatal.pdf" target="_blank"><img src="<?php the_field('btnler'); ?>" alt=""></a>
       </div>
     </div>
   </section>

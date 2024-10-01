@@ -5,7 +5,7 @@
 <?php get_header(); ?>
 
 <article id="lucianaPage">
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/lucianaPagina.png" alt="Luciana Lima 16789">
+    <img src="<?php the_field('lucianapage'); ?>" alt="Luciana Lima 16789">
     <div class="textoCandidato montserrat-font">
         <h1>Luciana Lima:</h1>
         <p>Sou Luciana Lima, tenho 54 anos. Atuo como professora da rede municipal de educação de Natal e sou aposentada da rede estadual. Formei-me em Pedagogia pela Universidade Federal do Rio Grande do Norte (UFRN) e tenho especialização em Psicopedagogia. Sou filha de um ex-fuzileiro naval e de uma dona de casa. Nasci em Natal e cresci no bairro das Quintas. Estudei nas escolas públicas Professora Maria Lídia, Escola Rotary, e fiz o Magistério no Instituto de Educação Superior Presidente Kennedy (IFESP).<br>

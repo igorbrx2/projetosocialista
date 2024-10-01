@@ -18,11 +18,11 @@
 <br>Assim como Trotsky, líder revolucionário russo, defendo que “Toda Revolução é impossível até que se torne inevitável”. Para mim, a luta pelo socialismo é atual, pois a classe trabalhadora é a única que pode salvar a vida no planeta com organização e luta revolucionária. Quem produz a riqueza é quem deve governar.<br></p>
         <span class="propostas candidato" data-candidato="alexandre">| Principais propostas |</span>
     </div>
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/alexandrePagina.png" alt="Alexandre Guedes 16123">
+    <img src="<?php the_field('alexandrepage'); ?>" alt="Alexandre Guedes 16123">
 </article>
 
 <article id="ericaPage">
-<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/ericaPagina.png" alt="Érica Guarani 16123">
+<img src="<?php the_field('ericapage'); ?>" alt="Érica Guarani 16123">
     <div class="textoCandidato montserrat-font">
         <h1>Érica Guarani:</h1>
         <p>Eu sou Érica Guarani. Sou uma mulher indígena nascida em Natal/RN. Formei-me em Ciências Biológicas e sou técnica de enfermagem concursada. Enquanto trabalhadora da saúde municipal, tenho enfrentamentos diretos com a gestão truculenta do prefeito Álvaro Dias (Republicanos). Faço parte da direção do Sindsaúde/RN, adoro arte e me expresso através de desenhos, pinturas e textos.<br>
@@ -37,7 +37,7 @@
 </article>
 
 <article id="jairanPage">
-<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/jairanPagina.png" alt="José Jairan 16123">
+<img src="<?php the_field('jairanpage'); ?>" alt="José Jairan 16123">
     <div class="textoCandidato montserrat-font">
         <h1>José Jairan:</h1>
         <p>Eu sou José Jairan. Sou professor de Matemática com vínculo no estado e também sou formado em Letras. Construo o Movimento Nacional Quilombo Raça e Classe, o Movimento Muda Sinte e sou um dos fundadores do coletivo LGBTI Auroras.<br>

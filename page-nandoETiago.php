@@ -5,7 +5,7 @@
 <?php get_header(); ?>
 
 <article id="nandoPage">
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/nandoPagina.png" alt="Nando Poeta 16">
+    <img src="<?php the_field('nandopage'); ?>" alt="Nando Poeta 16">
     <div class="textoCandidato montserrat-font">
         <h1>Nando Poeta:</h1>
         <p>Meu nome é Nando Poeta. Sou sociólogo, tenho 61 anos e nasci em Natal. Sou casado, pai de três filhos e avô. Já fui professor da rede privada e da rede pública do Estado de São Paulo, onde lecionava Sociologia. Atualmente, trabalho na Secretaria de Educação do Rio Grande do Norte e no Instituto Latino-Americano de Estudos Socioeconômicos (Ilaese). Sou cordelista com vários títulos publicados, muitos com temática político-social e um dos organizadores do Ponto de Memória Estação do Cordel.<br>
@@ -27,7 +27,7 @@
         <br>O PSTU foi fundamental na minha vida. Foi o partido que ampliou minha visão de mundo. Passei então a entender que meu contexto social não era normal, como morar num bairro periférico estigmatizado e esquecido pelos governos, usar serviços públicos precários e presenciar a violência urbana diária, com vários jovens da minha geração nos deixando. É para denunciar esses problemas da sociedade capitalista e para fortalecer a luta da nossa classe que estou junto com minhas companheiras e companheiros do PSTU nestas eleições.</p>
         <span class="propostas candidato" data-candidato="tiago">| Principais propostas |</span>
     </div>
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/tiagoPagina.png" alt="Tiago Silva 16">
+    <img src="<?php the_field('tiagopage'); ?>" alt="Tiago Silva 16">
 </article>
 
 <?php
